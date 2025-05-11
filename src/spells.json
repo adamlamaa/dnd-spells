@@ -1,6 +1,6 @@
 [
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -26,7 +26,7 @@
         "type": "Conjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "ranger",
             "wizard"
@@ -55,7 +55,7 @@
         "type": "1st-level abjuration (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -87,7 +87,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric"
@@ -117,7 +117,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -147,7 +147,7 @@
         "type": "Abjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -177,7 +177,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -204,7 +204,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -237,7 +237,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -265,7 +265,7 @@
         "type": "Necromancy cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -295,7 +295,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -325,7 +325,7 @@
         "type": "1st-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -353,7 +353,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -378,7 +378,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -411,7 +411,7 @@
         "type": "1st-level divination (Ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid"
@@ -441,7 +441,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -474,7 +474,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -505,7 +505,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -531,7 +531,7 @@
         "type": "1st-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -567,7 +567,7 @@
         "type": "1st-level divination (Ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -600,7 +600,7 @@
         "type": "1st-level divination (Ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -630,7 +630,7 @@
         "type": "1st-level illusion"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -654,7 +654,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard"
         ],
@@ -679,7 +679,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -703,7 +703,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "warlock"
         ],
@@ -727,7 +727,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "ranger"
         ],
@@ -752,7 +752,7 @@
         "type": "1st-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -776,7 +776,7 @@
         "type": "1st-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid"
@@ -802,7 +802,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "sorcerer",
             "warlock",
@@ -830,7 +830,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -918,7 +918,7 @@
         "type": "1st-level conjuration (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -944,7 +944,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger",
@@ -975,7 +975,7 @@
         "type": "1st-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -1008,7 +1008,7 @@
         "type": "Enchantment cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -1037,7 +1037,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -1064,7 +1064,7 @@
         "type": "1st-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid"
@@ -1090,7 +1090,7 @@
         "type": "Divination cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -1115,7 +1115,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "ranger"
         ],
@@ -1140,7 +1140,7 @@
         "type": "1st-level conjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "bard",
             "cleric",
@@ -1194,7 +1194,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "warlock"
         ],
@@ -1222,7 +1222,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "paladin"
@@ -1249,7 +1249,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "ranger"
         ],
@@ -1334,7 +1334,7 @@
         "type": "1st-level illusion (Ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -1359,7 +1359,7 @@
         "type": "1st-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger",
@@ -1392,7 +1392,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -1425,7 +1425,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -1459,7 +1459,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -1488,7 +1488,7 @@
         "type": "1st-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -1518,7 +1518,7 @@
         "type": "Conjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -1580,7 +1580,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -1611,7 +1611,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -1644,7 +1644,7 @@
         "type": "Illusion cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -1674,7 +1674,7 @@
         "type": "Conjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -1704,7 +1704,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -1728,7 +1728,7 @@
         "type": "Conjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin",
@@ -1761,7 +1761,7 @@
         "type": "1st-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -1789,7 +1789,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -1815,7 +1815,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -1842,7 +1842,7 @@
         "type": "1st-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin",
@@ -1872,7 +1872,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid"
@@ -1901,7 +1901,7 @@
         "type": "Abjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -1925,7 +1925,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "cleric"
         ],
@@ -1952,7 +1952,7 @@
         "type": "1st-level abjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "cleric",
             "paladin"
@@ -1981,7 +1981,7 @@
         "type": "1st-level abjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -2032,7 +2032,7 @@
         "type": "1st-level abjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "druid"
         ],
@@ -2059,7 +2059,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -2085,7 +2085,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -2116,7 +2116,7 @@
         "type": "1st-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -2148,7 +2148,7 @@
         "type": "1st-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -2172,7 +2172,7 @@
         "type": "Necromancy cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -2200,7 +2200,7 @@
         "type": "1st-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -2224,7 +2224,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -2251,7 +2251,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -2275,7 +2275,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -2306,7 +2306,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -2336,7 +2336,7 @@
         "type": "Divination cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "warlock",
@@ -2367,7 +2367,7 @@
         "type": "1st-level conjuration (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard"
         ],
@@ -2391,7 +2391,7 @@
         "type": "Enchantment cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -2423,7 +2423,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -2447,7 +2447,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -2477,7 +2477,7 @@
         "type": "2nd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -2509,7 +2509,7 @@
         "type": "2nd-level enchantment (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -2567,7 +2567,7 @@
         "type": "2nd-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric"
@@ -2593,7 +2593,7 @@
         "type": "2nd-level Enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -2631,7 +2631,7 @@
         "type": "2nd-level enchantment (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -2688,7 +2688,7 @@
         "type": "2nd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -2716,7 +2716,7 @@
         "type": "2nd-level illusion (ritual)"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "cleric"
         ],
@@ -2741,7 +2741,7 @@
         "type": "2nd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -2798,7 +2798,7 @@
         "type": "3rd-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -2825,7 +2825,7 @@
         "type": "4th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -2849,7 +2849,7 @@
         "type": "4th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -2873,7 +2873,7 @@
         "type": "4th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -2897,7 +2897,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin",
@@ -2934,7 +2934,7 @@
         "type": "4th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -2958,7 +2958,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -2989,7 +2989,7 @@
         "type": "4th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -3018,7 +3018,7 @@
         "type": "3rd-level necromancy"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -3042,7 +3042,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -3068,7 +3068,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -3126,7 +3126,7 @@
         "type": "3rd-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -3160,7 +3160,7 @@
         "type": "2nd-level Conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard"
         ],
@@ -3184,7 +3184,7 @@
         "type": "4th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -3211,7 +3211,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "ranger"
         ],
@@ -3267,7 +3267,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -3293,7 +3293,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -3317,7 +3317,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -3349,7 +3349,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -3386,7 +3386,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -3411,7 +3411,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -3444,7 +3444,7 @@
         "type": "3rd-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -3477,7 +3477,7 @@
         "type": "3rd-level necromancy (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -3507,7 +3507,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -3539,7 +3539,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -3570,7 +3570,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -3599,7 +3599,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -3632,7 +3632,7 @@
         "type": "3rd-level illusion"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "ranger"
         ],
@@ -3692,7 +3692,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -3726,7 +3726,7 @@
         "type": "3rd-level illusion"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "cleric"
         ],
@@ -3751,7 +3751,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -3777,7 +3777,7 @@
         "type": "2nd-Level Transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -3804,7 +3804,7 @@
         "type": "2nd-Level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -3833,7 +3833,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "ranger",
@@ -3864,7 +3864,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid"
@@ -3942,7 +3942,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -3974,7 +3974,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -4003,7 +4003,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -4034,7 +4034,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -4065,7 +4065,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -4094,7 +4094,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric"
@@ -4123,7 +4123,7 @@
         "type": "3rd-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -4151,7 +4151,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -4179,7 +4179,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -4210,7 +4210,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -4272,7 +4272,7 @@
         "type": "4th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -4303,7 +4303,7 @@
         "type": "4th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -4333,7 +4333,7 @@
         "type": "4th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -4359,7 +4359,7 @@
         "type": "4th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -4394,7 +4394,7 @@
         "type": "3rd-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -4420,7 +4420,7 @@
         "type": "2nd-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -4446,7 +4446,7 @@
         "type": "2nd-Level illusion"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -4471,7 +4471,7 @@
         "type": "2nd-Level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "ranger"
         ],
@@ -4499,7 +4499,7 @@
         "type": "2nd-Level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -4529,7 +4529,7 @@
         "type": "2nd-Level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -4560,7 +4560,7 @@
         "type": "2nd-Level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger",
@@ -4593,7 +4593,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -4624,7 +4624,7 @@
         "type": "2nd-Level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -4648,7 +4648,7 @@
         "type": "8th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "wizard"
@@ -4795,7 +4795,7 @@
         "type": "Wind"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "warlock",
             "wizard"
@@ -4821,7 +4821,7 @@
         "type": "8th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -4852,7 +4852,7 @@
         "type": "8th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -4883,7 +4883,7 @@
         "type": "8th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -4949,7 +4949,7 @@
         "type": "9th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "sorcerer",
@@ -4980,7 +4980,7 @@
         "type": "9th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "warlock"
@@ -5006,7 +5006,7 @@
         "type": "8th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -5062,7 +5062,7 @@
         "type": "9th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5088,7 +5088,7 @@
         "type": "8th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -5112,7 +5112,7 @@
         "type": "9th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -5136,7 +5136,7 @@
         "type": "8th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5162,7 +5162,7 @@
         "type": "9th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "wizard"
@@ -5188,7 +5188,7 @@
         "type": "8th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard"
         ],
@@ -5212,7 +5212,7 @@
         "type": "9th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -5242,7 +5242,7 @@
         "type": "9th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -5272,7 +5272,7 @@
         "type": "8th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -5296,7 +5296,7 @@
         "type": "9th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "wizard"
@@ -5325,7 +5325,7 @@
         "type": "9th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -5349,7 +5349,7 @@
         "type": "9th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -5376,7 +5376,7 @@
         "type": "8th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -5407,7 +5407,7 @@
         "type": "8th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5433,7 +5433,7 @@
         "type": "9th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "warlock",
@@ -5517,7 +5517,7 @@
         "type": "9th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -5541,7 +5541,7 @@
         "type": "9th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5592,7 +5592,7 @@
         "type": "7th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5622,7 +5622,7 @@
         "type": "7th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -5652,7 +5652,7 @@
         "type": "4th-level conjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "cleric"
         ],
@@ -5676,7 +5676,7 @@
         "type": "7th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -5709,7 +5709,7 @@
         "type": "7th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -5737,7 +5737,7 @@
         "type": "7th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -5765,7 +5765,7 @@
         "type": "7th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "warlock",
@@ -5824,7 +5824,7 @@
         "type": "7th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -5850,7 +5850,7 @@
         "type": "7th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "wizard"
@@ -5879,7 +5879,7 @@
         "type": "7th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -5974,7 +5974,7 @@
         "type": "7th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -6005,7 +6005,7 @@
         "type": "7th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -6090,7 +6090,7 @@
         "type": "7th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -6118,7 +6118,7 @@
         "type": "7th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -6151,7 +6151,7 @@
         "type": "2nd-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -6185,7 +6185,7 @@
         "type": "2nd-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -6214,7 +6214,7 @@
         "type": "ANIMATED OBJECTS STATISTICS"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -6238,7 +6238,7 @@
         "type": "5th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -6295,7 +6295,7 @@
         "type": "5th-level transmutation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -6319,7 +6319,7 @@
         "type": "5th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -6349,7 +6349,7 @@
         "type": "6th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -6373,7 +6373,7 @@
         "type": "6th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -6405,7 +6405,7 @@
         "type": "6th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -6429,7 +6429,7 @@
         "type": "5th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -6509,7 +6509,7 @@
         "type": "5th-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -6596,7 +6596,7 @@
         "type": "6th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "ranger"
         ],
@@ -6649,7 +6649,7 @@
         "type": "5th-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid"
@@ -6734,7 +6734,7 @@
         "type": "6th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "wizard"
@@ -6793,7 +6793,7 @@
         "type": "5th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "paladin"
         ],
@@ -6817,7 +6817,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -6847,7 +6847,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -6874,7 +6874,7 @@
         "type": "4th-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "paladin"
@@ -6904,7 +6904,7 @@
         "type": "5th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer"
@@ -6931,7 +6931,7 @@
         "type": "4th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -6991,7 +6991,7 @@
         "type": "5th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -7025,7 +7025,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -7054,7 +7054,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "warlock"
@@ -7104,7 +7104,7 @@
         "type": "4th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -7190,7 +7190,7 @@
         "type": "6th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -7218,7 +7218,7 @@
         "type": "2nd-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -7245,7 +7245,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "druid"
         ],
@@ -7273,7 +7273,7 @@
         "type": "2nd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -7301,7 +7301,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "wizard"
@@ -7331,7 +7331,7 @@
         "type": "2nd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "warlock",
             "wizard"
@@ -7387,7 +7387,7 @@
         "type": "6th-level abjuration (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -7454,7 +7454,7 @@
         "type": "5th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "wizard"
@@ -7483,7 +7483,7 @@
         "type": "2nd-level necromancy (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -7507,7 +7507,7 @@
         "type": "4th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -7569,7 +7569,7 @@
         "type": "3rd-level abjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "ranger",
             "druid"
@@ -7595,7 +7595,7 @@
         "type": "4th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard",
@@ -7623,7 +7623,7 @@
         "type": "4th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -7654,7 +7654,7 @@
         "type": "5th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -7707,7 +7707,7 @@
         "type": "6th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard",
@@ -7798,7 +7798,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -7822,7 +7822,7 @@
         "type": "6th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "bard"
@@ -7852,7 +7852,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid"
@@ -7908,7 +7908,7 @@
         "type": "6th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -7942,7 +7942,7 @@
         "type": "5th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -7974,7 +7974,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -8006,7 +8006,7 @@
         "type": "5th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard",
@@ -8065,7 +8065,7 @@
         "type": "5th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -8094,7 +8094,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -8125,7 +8125,7 @@
         "type": "2nd-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -8155,7 +8155,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -8192,7 +8192,7 @@
         "type": "4th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -8256,7 +8256,7 @@
         "type": "6th-level necromancy"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin",
             "wizard"
@@ -8312,7 +8312,7 @@
         "type": "2nd-level illusion (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -8341,7 +8341,7 @@
         "type": "5th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -8375,7 +8375,7 @@
         "type": "6th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -8403,7 +8403,7 @@
         "type": "2nd-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "wizard"
@@ -8429,7 +8429,7 @@
         "type": "5th-level illusion"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "sorcerer",
             "warlock",
@@ -8457,7 +8457,7 @@
         "type": "2nd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "wizard"
@@ -8484,7 +8484,7 @@
         "type": "5th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -8512,7 +8512,7 @@
         "type": "2nd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -8543,7 +8543,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -8572,7 +8572,7 @@
         "type": "2nd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -8599,7 +8599,7 @@
         "type": "5th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -8624,7 +8624,7 @@
         "type": "4th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -8713,7 +8713,7 @@
         "type": "5th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -8746,7 +8746,7 @@
         "type": "4th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "wizard"
@@ -8807,7 +8807,7 @@
         "type": "5th-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "ranger",
@@ -8837,7 +8837,7 @@
         "type": "2nd-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "warlock",
             "wizard"
@@ -8890,7 +8890,7 @@
         "type": "5th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -8917,7 +8917,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -8979,7 +8979,7 @@
         "type": "5th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -9007,7 +9007,7 @@
         "type": "5th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -9038,7 +9038,7 @@
         "type": "2nd-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -9072,7 +9072,7 @@
         "type": "2nd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "warlock",
@@ -9103,7 +9103,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -9132,7 +9132,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "paladin"
         ],
@@ -9156,7 +9156,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -9187,7 +9187,7 @@
         "type": "4th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -9218,7 +9218,7 @@
         "type": "6th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -9251,7 +9251,7 @@
         "type": "4th-level abjuration"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "ranger"
         ],
@@ -9278,7 +9278,7 @@
         "type": "5th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -9335,7 +9335,7 @@
         "type": "5th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -9359,7 +9359,7 @@
         "type": "6th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -9385,7 +9385,7 @@
         "type": "5th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -9420,7 +9420,7 @@
         "type": "6th-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "warlock",
             "wizard"
@@ -9447,7 +9447,7 @@
         "type": "3rd-level necromancy"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -9479,7 +9479,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -9507,7 +9507,7 @@
         "type": "6th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -9534,7 +9534,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -9565,7 +9565,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -9593,7 +9593,7 @@
         "type": "6th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger",
@@ -9626,7 +9626,7 @@
         "type": "3rd-level transmutation (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric",
             "druid",
@@ -9659,7 +9659,7 @@
         "type": "3rd-level transmutation (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -9715,7 +9715,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -9744,7 +9744,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "cleric"
         ],
@@ -9768,7 +9768,7 @@
         "type": "6th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "cleric",
@@ -9796,7 +9796,7 @@
         "type": "2nd-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -9827,7 +9827,7 @@
         "type": "1st-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "sorcerer",
@@ -9855,7 +9855,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -9883,7 +9883,7 @@
         "type": "2nd-level transmutation (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -9915,7 +9915,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "bard",
             "druid",
@@ -9943,7 +9943,7 @@
         "type": "2nd level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -9971,7 +9971,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10001,7 +10001,7 @@
         "type": "Conjuration cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10031,7 +10031,7 @@
         "type": "Evocation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10059,7 +10059,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "bonus",
+        "casting_time": "Bonus",
         "classes": [
             "druid",
             "warlock"
@@ -10085,7 +10085,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10113,7 +10113,7 @@
         "type": "Transmutation cantrip"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10170,7 +10170,7 @@
         "type": "1st-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger"
@@ -10199,7 +10199,7 @@
         "type": "1st-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10231,7 +10231,7 @@
         "type": "1st-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10261,7 +10261,7 @@
         "type": "2nd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10293,7 +10293,7 @@
         "type": "2nd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -10320,7 +10320,7 @@
         "type": "1st-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10348,7 +10348,7 @@
         "type": "5th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -10373,7 +10373,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10405,7 +10405,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "warlock",
@@ -10434,7 +10434,7 @@
         "type": "4th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "ranger",
@@ -10465,7 +10465,7 @@
         "type": "3rd-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10495,7 +10495,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10525,7 +10525,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10555,7 +10555,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10585,7 +10585,7 @@
         "type": "6th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -10612,7 +10612,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid"
         ],
@@ -10636,7 +10636,7 @@
         "type": "6th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "wizard"
@@ -10665,7 +10665,7 @@
         "type": "3rd-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "wizard"
@@ -10694,7 +10694,7 @@
         "type": "5th-level transmutation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10725,7 +10725,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "sorcerer",
@@ -10756,7 +10756,7 @@
         "type": "4th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "druid",
             "wizard"
@@ -10785,7 +10785,7 @@
         "type": "7th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -10811,7 +10811,7 @@
         "type": "5th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -10838,7 +10838,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "sorcerer",
             "wizard"
@@ -10868,7 +10868,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -10895,7 +10895,7 @@
         "type": "3rd-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -10950,7 +10950,7 @@
         "type": "6th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -10977,7 +10977,7 @@
         "type": "4th-level conjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -11061,7 +11061,7 @@
         "type": "2th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -11145,7 +11145,7 @@
         "type": "4th-level abjuration"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard",
             "bard"
@@ -11174,7 +11174,7 @@
         "type": "7th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -11201,7 +11201,7 @@
         "type": "2th-level illusion"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard",
             "sorcerer"
@@ -11231,7 +11231,7 @@
         "type": "6th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
@@ -11258,7 +11258,7 @@
         "type": "4th-level evocation"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard",
             "bard"
@@ -11284,7 +11284,7 @@
         "type": "6th-level enchantment"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard",
             "bard"
@@ -11310,7 +11310,7 @@
         "type": "5th-level divination (ritual)"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard",
             "bard"
@@ -11336,7 +11336,7 @@
         "type": "1st-level divination"
     },
     {
-        "casting_time": "action",
+        "casting_time": "Action",
         "classes": [
             "wizard"
         ],
