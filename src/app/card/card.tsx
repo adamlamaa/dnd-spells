@@ -60,7 +60,8 @@ const CardLayout = ({ spell, continued }: CardLayoutProps) => {
           </div>
         ) : null}
         <Cell
-          className={"h-full"}
+          lineBreaks
+          className={"h-full px-2"}
           text={spell.description}
           continued={continued}
         />
@@ -93,6 +94,7 @@ const Cell = ({
   bold = false,
   smallText = false,
   forceSmall = false,
+  lineBreaks = false,
   className,
   text,
 }: {
@@ -101,6 +103,7 @@ const Cell = ({
   bold?: boolean
   smallText?: boolean
   forceSmall?: boolean
+  lineBreaks?: boolean
   className?: ClassValue
   text?: string
 }) => {
@@ -111,14 +114,18 @@ const Cell = ({
     <div
       className={cn(
         "min-h-[15px] w-full items-center rounded-lg border-2 border-white bg-white p-1 text-base",
-        center && "flex justify-center",
+        center && "flex items-center justify-center",
         bold && "font-bold",
         isSmallText && "text-xs",
         continued && "relative",
         className,
       )}
     >
-      <RenderWithNewLines text={text ?? ""} />
+      {lineBreaks ? (
+        <RenderWithNewLines text={text ?? ""} />
+      ) : (
+        <p className={"text-center"}>{text}</p>
+      )}
       {continued && (
         <div className={"absolute right-0 bottom-0"}>{`Continued -->`}</div>
       )}
