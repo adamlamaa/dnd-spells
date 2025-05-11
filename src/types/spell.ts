@@ -1,9 +1,21 @@
+export interface SpellComponents {
+  material: boolean
+  raw: string
+  somatic: boolean
+  verbal: boolean
+}
+
 export interface Spell {
-  lvl: string
-  name: string
-  casting: string
-  range: string
-  components: string
+  casting_time: string
+  classes: string[]
+  components: SpellComponents
+  description: string
   duration: string
-  text: string
+  level: string
+  name: string
+  range: string
+  ritual: boolean
+  school: string
+  tags: string[]
+  type: string
 }

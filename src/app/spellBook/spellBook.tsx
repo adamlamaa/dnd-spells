@@ -1,14 +1,15 @@
-import type { Spell } from "../../types/spell"
 import { Card } from "../card/card"
+import spells from "../../spells.json"
+import type { Spell } from "../../types/spell"
 
 interface SpellBookProps {
-  spells: Spell[]
+  id?: string
 }
 
-export const SpellBook = ({ spells }: SpellBookProps) => {
+export const SpellBook = ({}: SpellBookProps) => {
   return (
     <div className={"grid grid-cols-3 gap-4"}>
-      {spells.map((spell, index) => (
+      {spells.map((spell: Spell, index) => (
         <Card spell={spell} key={index} />
       ))}
     </div>

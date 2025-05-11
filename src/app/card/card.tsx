@@ -6,7 +6,15 @@ interface CardProps {
 }
 
 export const Card = ({
-  spell: { lvl, name, casting, range, duration, components, text },
+  spell: {
+    level,
+    name,
+    casting_time,
+    range,
+    duration,
+    components,
+    description,
+  },
 }: CardProps) => {
   return (
     <div
@@ -16,17 +24,17 @@ export const Card = ({
     >
       <div className="flex gap-2">
         <div>
-          <Cell>{lvl}</Cell>
+          <Cell>{level}</Cell>
         </div>
         <Cell>{name}</Cell>
       </div>
       <div className="flex gap-2">
-        <Cell>{casting}</Cell>
+        <Cell>{casting_time}</Cell>
         <Cell>{range}</Cell>
         <Cell>{duration}</Cell>
       </div>
-      <Cell>{text}</Cell>
-      <p>{components}</p>
+      <Cell>{description}</Cell>
+      <p>{components.raw}</p>
     </div>
   )
 }
