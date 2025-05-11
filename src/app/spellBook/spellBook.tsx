@@ -10,7 +10,10 @@ export const SpellBook = ({}: SpellBookProps) => {
   return (
     <div className={"grid grid-cols-3 gap-4"}>
       {spells
-        .filter((spell: Spell) => spell.classes.includes("paladin"))
+        .filter(
+          (spell: Spell) =>
+            spell.classes.includes("paladin") || spell.name === "Confusion",
+        )
         .sort((a: Spell, b: Spell) => {
           const levelA = a.level === "cantrip" ? 0 : parseInt(a.level, 10)
           const levelB = b.level === "cantrip" ? 0 : parseInt(b.level, 10)

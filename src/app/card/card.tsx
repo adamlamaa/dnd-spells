@@ -8,19 +8,11 @@ interface CardProps {
 }
 
 export const Card = ({ spell }: CardProps) => {
-  if (!spell.description_continued) {
-    return <CardLayout spell={spell} />
-  }
-
   return (
     <>
-      <CardLayout spell={spell} continued={true} />
-      <CardLayout
-        spell={{
-          name: spell.name,
-          description: spell.description_continued,
-        }}
-      />
+      <CardLayout spell={spell} continued={!!spell.description_continued} />
+      {/* Print backside if there is continued text*/}
+      {spell.description_continued && <CardLayout spell={spell} back />}
     </>
   )
 }
@@ -31,9 +23,14 @@ type CardLayoutPropSpell = Pick<Spell, "name" | "description"> &
 interface CardLayoutProps {
   spell: CardLayoutPropSpell
   continued?: boolean
+  back?: boolean
 }
-const CardLayout = ({ spell, continued }: CardLayoutProps) => {
-  // 1240*1754
+const CardLayout = ({
+  spell,
+  continued = false,
+  back = false,
+}: CardLayoutProps) => {
+  const text = getCardText({ spell, continued, back })
   return (
     <div
       className={
@@ -62,7 +59,7 @@ const CardLayout = ({ spell, continued }: CardLayoutProps) => {
         <Cell
           lineBreaks
           className={"h-full px-2"}
-          text={spell.description}
+          text={text}
           continued={continued}
         />
       </div>
@@ -73,6 +70,31 @@ const CardLayout = ({ spell, continued }: CardLayoutProps) => {
       )}
     </div>
   )
+}
+
+const getCardText = ({
+  spell,
+  continued = false,
+  back = false,
+}: CardLayoutProps) => {
+  if (back) {
+    if (spell.higher_levels) {
+      return (
+        spell.description_continued +
+        "\n\nAt Higher Levels: " +
+        spell.higher_levels
+      )
+    } else {
+      return spell.description_continued
+    }
+  }
+  if (continued) {
+    return spell.description
+  }
+  if (!spell.higher_levels) {
+    return spell.description
+  }
+  return spell.description + "\n\nAt Higher Levels: " + spell.higher_levels
 }
 
 const RenderWithNewLines = ({ text }: { text: string }) => {
@@ -127,7 +149,9 @@ const Cell = ({
         <p className={"text-center"}>{text}</p>
       )}
       {continued && (
-        <div className={"absolute right-0 bottom-0"}>{`Continued -->`}</div>
+        <div
+          className={"absolute right-0 bottom-0 text-xs"}
+        >{`Continued -->`}</div>
       )}
     </div>
   )

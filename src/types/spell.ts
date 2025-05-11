@@ -19,4 +19,5 @@ export interface Spell {
   school: string
   tags: string[]
   type: string
+  higher_levels?: string
 }
