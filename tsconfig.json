@@ -26,9 +26,6 @@
 
     /* Path Aliases */
     "baseUrl": "./dnd-spells",
-    "paths": {
-      "~/*": ["./src/*"]
-    }
   },
   "include": [
     "next-env.d.ts",
