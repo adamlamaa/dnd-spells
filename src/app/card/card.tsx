@@ -37,17 +37,20 @@ const CardLayout = ({ spell, continued }: CardLayoutProps) => {
   return (
     <div
       className={
-        "flex h-[550px] w-[400px] flex-col justify-between gap-2 rounded-lg border-2 border-white bg-gray-800 p-2"
+        "flex h-[360px] flex-col justify-between gap-2 rounded-lg border-2 border-white bg-gray-800 p-2"
       }
     >
       <div className={"flex h-full flex-col gap-2"}>
         <div className={cn("flex", spell.level && "gap-2")}>
-          <div>
-            {spell.level && (
-              <Cell center bold className={"w-[70px]"} text={spell.level} />
-            )}
+          <div className={"flex-1"}>
+            {spell.level && <Cell center bold text={spell.level} />}
           </div>
-          <Cell center bold text={spell.name} />
+          <Cell
+            center
+            bold
+            className={spell.level ? "flex-[2]" : undefined}
+            text={spell.name}
+          />
         </div>
         {spell.casting_time || spell.range || spell.duration ? (
           <div className="flex gap-2">
@@ -63,8 +66,8 @@ const CardLayout = ({ spell, continued }: CardLayoutProps) => {
         />
       </div>
       {spell.components && (
-        <p className={"flex justify-end text-white"}>
-          {spell.description.length} {spell.components.raw}
+        <p className={"flex justify-end text-xs text-white"}>
+          {spell.components.raw}
         </p>
       )}
     </div>
@@ -107,7 +110,7 @@ const Cell = ({
   return (
     <div
       className={cn(
-        "min-h-[45px] w-full items-center rounded-lg border-2 border-white bg-white p-1",
+        "min-h-[15px] w-full items-center rounded-lg border-2 border-white bg-white p-1 text-base",
         center && "flex justify-center",
         bold && "font-bold",
         isSmallText && "text-xs",

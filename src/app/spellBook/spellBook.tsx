@@ -8,7 +8,7 @@ interface SpellBookProps {
 
 export const SpellBook = ({}: SpellBookProps) => {
   return (
-    <div className={"grid grid-cols-3 gap-2"}>
+    <div className={"grid grid-cols-3 gap-4"}>
       {spells
         .filter((spell: Spell) => spell.classes.includes("paladin"))
         .map((spell: Spell, index) => (
