@@ -14,16 +14,16 @@
   body, html {
     width: 21cm !important;
     height: 29.7cm !important;
-    margin: 0;
+    margin: 2px !important;
   }
   .print-preview {
     width: 21cm;
     height: 29.7cm;
     margin: 0;
-    border: 5px solid #000;
+    border: none;
   }
   .text-base {
-    font-size: 10px; /* Adjust the size as needed */
+    font-size: 9px; /* Adjust the size as needed */
   }
   .text-xs {
     font-size: 6px; /* Adjust the size as needed */
