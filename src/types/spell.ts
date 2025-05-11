@@ -10,6 +10,7 @@ export interface Spell {
   classes: string[]
   components: SpellComponents
   description: string
+  description_continued?: string
   duration: string
   level: string
   name: string
