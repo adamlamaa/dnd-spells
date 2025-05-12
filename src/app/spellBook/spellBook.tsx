@@ -12,7 +12,9 @@ export const SpellBook = ({}: SpellBookProps) => {
       {spells
         .filter(
           (spell: Spell) =>
-            spell.classes.includes("paladin") || spell.name === "Confusion",
+            spell.classes.includes("paladin") ||
+            spell.name === "Confusion" ||
+            spell.tags.includes("oath_of_vengeance"),
         )
         .sort((a: Spell, b: Spell) => {
           const levelA = a.level === "cantrip" ? 0 : parseInt(a.level, 10)

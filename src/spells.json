@@ -112,7 +112,8 @@
         "tags": [
             "bard",
             "cleric",
-            "level1"
+            "level1",
+            "oath_of_vengeance"
         ],
         "type": "1st-level enchantment"
     },
@@ -1269,7 +1270,8 @@
         "school": "divination",
         "tags": [
             "ranger",
-            "level1"
+            "level1",
+            "oath_of_vengeance"
         ],
         "type": "1st-level divination"
     },
@@ -2626,7 +2628,8 @@
             "sorcerer",
             "warlock",
             "wizard",
-            "level2"
+            "level2",
+            "oath_of_vengeance"
         ],
         "type": "2nd-level enchantment (ritual)"
     },
@@ -2929,7 +2932,8 @@
             "sorcerer",
             "warlock",
             "wizard",
-            "level4"
+            "level4",
+            "oath_of_vengeance"
         ],
         "type": "4th-level abjuration"
     },
@@ -3594,7 +3598,8 @@
         "tags": [
             "sorcerer",
             "wizard",
-            "level3"
+            "level3",
+            "oath_of_vengeance"
         ],
         "type": "3rd-level transmutation"
     },
@@ -3969,7 +3974,8 @@
             "ranger",
             "sorcerer",
             "wizard",
-            "level3"
+            "level3",
+            "oath_of_vengeance"
         ],
         "type": "3rd-level abjuration"
     },
@@ -5635,7 +5641,7 @@
             "somatic": false,
             "verbal": true
         },
-        "description": "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualise, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"\n\nYou can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.\n\nIf you would arrive in a place already occupied by an object or a creature, you and any creature travelling with you each take 4d6 force damage, and the spell fails to teleport you.",
+        "description": "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualise, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"\n\nYou can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.\nIf you would arrive in a place already occupied by an object or a creature, you and any creature travelling with you each take 4d6 force damage, and the spell fails to teleport you.",
         "duration": "Instantaneous",
         "level": "4",
         "name": "Dimension Door",
@@ -5647,7 +5653,8 @@
             "sorcerer",
             "warlock",
             "wizard",
-            "level4"
+            "level4",
+            "oath_of_vengeance"
         ],
         "type": "4th-level conjuration"
     },
@@ -7937,7 +7944,8 @@
             "sorcerer",
             "warlock",
             "wizard",
-            "level5"
+            "level5",
+            "oath_of_vengeance"
         ],
         "type": "5th-level enchantment"
     },
@@ -8452,7 +8460,8 @@
             "sorcerer",
             "warlock",
             "wizard",
-            "level2"
+            "level2",
+            "oath_of_vengeance"
         ],
         "type": "2nd-level conjuration"
     },
@@ -8961,7 +8970,8 @@
             "somatic": true,
             "verbal": true
         },
-        "description": "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.\n\n|Knowledge|Save Modifier|\n|---|---|\n|Secondhand (you have heard of the target)| +5|\n|Firsthand (you have met the target)| 0|\n|Familiar (you know the target well)| -5|\n|Connection|Save Modifier|\n|Likeness or picture| -2|\n|Possession or garment| -4|\n|Body part, lock of hair, bit of nail, or the like| -10|\n\nOn a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours. On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.\n\nInstead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn\u2019t move.",
+        "description": "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.\n\nKnowledge|Save Modifier\nSecondhand (you have heard of the target)|+5\nFirsthand (you have met the target)|0\nFamiliar (you know the target well)|-5\nConnection|Save Modifier\nLikeness or picture|-2\nPossession or garment|-4\nBody part, lock of hair, bit of nail, or the like|-10",
+        "description_continued": "On a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours. On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.\n\nInstead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn’t move.",
         "duration": "Concentration, up to 10 minutes",
         "level": "5",
         "name": "Scrying",
@@ -8974,7 +8984,8 @@
             "druid",
             "warlock",
             "wizard",
-            "level5"
+            "level5",
+            "oath_of_vengeance"
         ],
         "type": "5th-level divination"
     },
