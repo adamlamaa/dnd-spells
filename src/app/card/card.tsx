@@ -38,18 +38,18 @@ const CardLayout = ({
       }
     >
       <div className={"flex h-full flex-col gap-2"}>
-        <div className={cn("flex", spell.level && "gap-2")}>
+        <div className={cn("flex", !back && "gap-2")}>
           <div className={"flex-1"}>
-            {spell.level && <Cell center bold text={spell.level} />}
+            {!back && <Cell center bold text={spell.level} />}
           </div>
           <Cell
             center
             bold
-            className={spell.level ? "flex-[2]" : undefined}
+            className={!back ? "flex-[2]" : undefined}
             text={spell.name}
           />
         </div>
-        {spell.casting_time || spell.range || spell.duration ? (
+        {!back ? (
           <div className="flex gap-2">
             <Cell center forceSmall text={spell.casting_time} />
             <Cell center forceSmall text={spell.range} />
