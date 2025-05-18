@@ -1,6 +1,6 @@
-import { Card } from "../card/card"
-import spells from "../../spells.json"
-import type { Spell } from "../../types/spell"
+import { SpellCard } from "./card/spellCard"
+import spells from "../../../spells.json"
+import type { Spell } from "../../../types/spell"
 
 interface SpellBookProps {
   id?: string
@@ -22,7 +22,7 @@ export const SpellBook = ({}: SpellBookProps) => {
           return levelA - levelB
         })
         .map((spell: Spell, index) => (
-          <Card spell={spell} key={index} />
+          <SpellCard spell={spell} key={index} />
         ))}
     </div>
   )

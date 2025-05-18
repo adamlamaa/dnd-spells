@@ -16,17 +16,12 @@
     width: 21cm !important;
     height: 29.7cm !important;
     margin: 0;
-  }
-  .print-preview {
-    width: 21cm;
-    height: 29.7cm;
-    margin: 0;
     border: none;
   }
   .text-base {
-    font-size: 9px; /* Adjust the size as needed */
+    font-size: 9px;
   }
   .text-xs {
-    font-size: 6px; /* Adjust the size as needed */
+    font-size: 6px;
   }
 }
