@@ -1,4 +1,6 @@
 import { SpellFilterSection } from "./section/spellFilterSection"
+import { Checkbox } from "@/components/ui/checkbox"
+import spells from "../../spells.json"
 
 interface SpellFiltersProps {
   id?: string
@@ -35,21 +37,37 @@ const SpellSubClass = {
 
 export const SpellFilters = ({ id }: SpellFiltersProps) => {
   return (
-    <div className={"flex w-full gap-2"}>
+    <div className={"flex w-full flex-wrap gap-2"}>
       <SpellFilterSection title={"Level"}>
         {Object.keys(SpellLevel).map((key) => (
-          <div key={key}>{SpellLevel[key as keyof typeof SpellLevel]}</div>
+          <div key={key} className={"flex items-center gap-2"}>
+            <Checkbox />
+            {SpellLevel[key as keyof typeof SpellLevel]}
+          </div>
         ))}
       </SpellFilterSection>
       <SpellFilterSection title={"Class"}>
         {Object.keys(SpellClass).map((key) => (
-          <div key={key}>{SpellClass[key as keyof typeof SpellClass]}</div>
+          <div key={key} className={"flex items-center gap-2"}>
+            <Checkbox />
+            {SpellClass[key as keyof typeof SpellClass]}
+          </div>
         ))}
       </SpellFilterSection>
       <SpellFilterSection title={"Subclass"}>
         {Object.keys(SpellSubClass).map((key) => (
-          <div key={key}>
+          <div key={key} className={"flex items-center gap-2"}>
+            <Checkbox />
             {SpellSubClass[key as keyof typeof SpellSubClass]}
+          </div>
+        ))}
+      </SpellFilterSection>
+
+      <SpellFilterSection title={"Spell"}>
+        {spells.map((spell) => (
+          <div key={spell.name} className={"flex items-center gap-2"}>
+            <Checkbox />
+            {spell.name}
           </div>
         ))}
       </SpellFilterSection>
