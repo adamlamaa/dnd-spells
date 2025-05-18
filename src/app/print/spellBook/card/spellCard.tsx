@@ -1,4 +1,3 @@
-import React from "react"
 import type { Spell } from "../../../../types/spell"
 import { SpellCardLayout } from "./layout/spellCardLayout"
 

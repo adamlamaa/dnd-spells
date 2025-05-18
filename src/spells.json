@@ -113,7 +113,7 @@
             "bard",
             "cleric",
             "level1",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "1st-level enchantment"
     },
@@ -623,7 +623,7 @@
         "school": "illusion",
         "tags": [
             "bard",
-            "cleric (trickery)",
+            "cleric_trickery",
             "sorcerer",
             "wizard",
             "level1"
@@ -1271,7 +1271,7 @@
         "tags": [
             "ranger",
             "level1",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "1st-level divination"
     },
@@ -2629,7 +2629,7 @@
             "warlock",
             "wizard",
             "level2",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "2nd-level enchantment (ritual)"
     },
@@ -2933,7 +2933,7 @@
             "warlock",
             "wizard",
             "level4",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "4th-level abjuration"
     },
@@ -3599,7 +3599,7 @@
             "sorcerer",
             "wizard",
             "level3",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "3rd-level transmutation"
     },
@@ -3975,7 +3975,7 @@
             "sorcerer",
             "wizard",
             "level3",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "3rd-level abjuration"
     },
@@ -5654,7 +5654,7 @@
             "warlock",
             "wizard",
             "level4",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "4th-level conjuration"
     },
@@ -7945,7 +7945,7 @@
             "warlock",
             "wizard",
             "level5",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "5th-level enchantment"
     },
@@ -8461,7 +8461,7 @@
             "warlock",
             "wizard",
             "level2",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "2nd-level conjuration"
     },
@@ -8985,7 +8985,7 @@
             "warlock",
             "wizard",
             "level5",
-            "oath_of_vengeance"
+            "paladin_oath_of_vengeance"
         ],
         "type": "5th-level divination"
     },
