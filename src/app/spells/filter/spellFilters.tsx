@@ -1,12 +1,14 @@
 import { SpellFilterSection } from "./section/spellFilterSection"
 import spells from "../../../spells.json"
-import { SpellClasses, SpellLevels, SpellSubClass } from "@/types/spell"
+import { SpellClasses, SpellLevels, SpellSubClasses } from "@/types/spell"
+import { useSpellStore } from "@/app/spells/spells.store"
+import { useShallow } from "zustand/react/shallow"
 
-interface SpellFiltersProps {
-  id?: string
-}
+export const SpellFilters = () => {
+  const {} = useSpellStore(
+    useShallow((state) => ({ getFilters: state.getFilters })),
+  )
 
-export const SpellFilters = ({}: SpellFiltersProps) => {
   return (
     <div className={"flex w-full flex-wrap gap-2"}>
       <SpellFilterSection
@@ -25,7 +27,7 @@ export const SpellFilters = ({}: SpellFiltersProps) => {
       />
       <SpellFilterSection
         title={"Subclass"}
-        entries={Object.entries(SpellSubClass).map(([key, label]) => ({
+        entries={Object.entries(SpellSubClasses).map(([key, label]) => ({
           key,
           label,
         }))}

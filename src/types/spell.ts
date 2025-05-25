@@ -28,10 +28,12 @@ export const SpellClasses = {
 
 export type SpellClass = keyof typeof SpellClasses
 
-export const SpellSubClass = {
+export const SpellSubClasses = {
   cleric_trickery: "Trickery",
   paladin_oath_of_vengeance: "Oath of Vengeance",
 }
+
+export type SpellSubClass = keyof typeof SpellSubClasses
 
 export interface SpellComponents {
   material: boolean
