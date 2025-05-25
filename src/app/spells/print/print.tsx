@@ -1,4 +1,4 @@
-import { SpellPage } from "./spellBook/spellPage"
+import { SpellPage } from "@/app/spells/print/spellPage/spellPage"
 import { useRef } from "react"
 import { useReactToPrint } from "react-to-print"
 
