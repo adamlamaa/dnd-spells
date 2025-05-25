@@ -1,14 +1,16 @@
 import { Checkbox } from "@/components/ui/checkbox"
 
-interface SpellFilterSectionProps {
+interface SpellFilterSectionProps<T> {
   title: string
   entries: { key: string; label: string }[]
+  onChange: (key: T, checked: boolean) => void
 }
 
-export const SpellFilterSection = ({
+export const SpellFilterSection = <T,>({
   title,
   entries,
-}: SpellFilterSectionProps) => {
+  onChange,
+}: SpellFilterSectionProps<T>) => {
   return (
     <div
       className={"min-w-[200px] flex-1 rounded-lg border-1 border-gray-200 p-4"}
@@ -23,7 +25,7 @@ export const SpellFilterSection = ({
             <Checkbox
               key={key}
               onCheckedChange={(checked) => {
-                console.log(`Toggled ${key}`, checked)
+                onChange(key as T, !!checked)
               }}
             />
             {label}

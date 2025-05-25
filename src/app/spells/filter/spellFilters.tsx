@@ -1,12 +1,22 @@
 import { SpellFilterSection } from "./section/spellFilterSection"
-import spells from "../../../spells.json"
+import spells from "@/spells.json"
 import { SpellClasses, SpellLevels, SpellSubClasses } from "@/types/spell"
 import { useSpellStore } from "@/app/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
 
 export const SpellFilters = () => {
-  const {} = useSpellStore(
-    useShallow((state) => ({ getFilters: state.getFilters })),
+  const {
+    updateLevelFilter,
+    updateClassFilter,
+    updateSubClassFilter,
+    updateSpellsFilter,
+  } = useSpellStore(
+    useShallow((state) => ({
+      updateLevelFilter: state.updateLevelFilter,
+      updateClassFilter: state.updateClassFilter,
+      updateSubClassFilter: state.updateSubClassFilter,
+      updateSpellsFilter: state.updateSpellsFilter,
+    })),
   )
 
   return (
@@ -17,6 +27,7 @@ export const SpellFilters = () => {
           key: level,
           label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
         }))}
+        onChange={updateLevelFilter}
       />
       <SpellFilterSection
         title={"Class"}
@@ -24,6 +35,7 @@ export const SpellFilters = () => {
           key,
           label,
         }))}
+        onChange={updateClassFilter}
       />
       <SpellFilterSection
         title={"Subclass"}
@@ -31,6 +43,7 @@ export const SpellFilters = () => {
           key,
           label,
         }))}
+        onChange={updateSubClassFilter}
       />
       <SpellFilterSection
         title={"Spell"}
@@ -38,6 +51,7 @@ export const SpellFilters = () => {
           key: spell.name,
           label: spell.name,
         }))}
+        onChange={updateSpellsFilter}
       />
     </div>
   )
