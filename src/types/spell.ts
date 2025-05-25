@@ -15,15 +15,23 @@ export interface Spell {
   higher_levels?: string
 }
 
-export type SpellClass =
-  | "bard"
-  | "cleric"
-  | "druid"
-  | "paladin"
-  | "ranger"
-  | "sorcerer"
-  | "warlock"
-  | "wizard"
+export const SpellClasses = {
+  bard: "Bard",
+  cleric: "Cleric",
+  druid: "Druid",
+  paladin: "Paladin",
+  ranger: "Ranger",
+  sorcerer: "Sorcerer",
+  warlock: "Warlock",
+  wizard: "Wizard",
+} as const
+
+export type SpellClass = keyof typeof SpellClasses
+
+export const SpellSubClass = {
+  cleric_trickery: "Trickery",
+  paladin_oath_of_vengeance: "Oath of Vengeance",
+}
 
 export interface SpellComponents {
   material: boolean
@@ -32,14 +40,17 @@ export interface SpellComponents {
   verbal: boolean
 }
 
-export type SpellLevel =
-  | "cantrip"
-  | "1"
-  | "2"
-  | "3"
-  | "4"
-  | "5"
-  | "6"
-  | "7"
-  | "8"
-  | "9"
+export const SpellLevels = [
+  "cantrip",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+] as const
+
+export type SpellLevel = (typeof SpellLevels)[number]
