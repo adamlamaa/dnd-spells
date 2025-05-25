@@ -1,6 +1,6 @@
 import React from "react"
 import type { ClassValue } from "clsx"
-import { cn } from "../../../../../../lib/utils"
+import { cn } from "../../../../../../../lib/utils"
 
 interface SpellCardLayoutCellProps {
   continued?: boolean

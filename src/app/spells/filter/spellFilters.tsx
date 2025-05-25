@@ -1,5 +1,5 @@
 import { SpellFilterSection } from "./section/spellFilterSection"
-import spells from "../../spells.json"
+import spells from "../../../spells.json"
 import { SpellClasses, SpellLevels, SpellSubClass } from "@/types/spell"
 
 interface SpellFiltersProps {

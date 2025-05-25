@@ -1,12 +1,12 @@
 import { SpellCard } from "./card/spellCard"
-import spells from "../../../spells.json"
+import spells from "../../../../spells.json"
 import type { Spell } from "@/types/spell"
 
-interface SpellBookProps {
+interface SpellPageProps {
   id?: string
 }
 
-export const SpellBook = ({}: SpellBookProps) => {
+export const SpellPage = ({}: SpellPageProps) => {
   return (
     <div className={"grid grid-cols-3 gap-1"}>
       {(spells as Spell[])

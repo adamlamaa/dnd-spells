@@ -1,6 +1,4 @@
-"use client"
-
-import { SpellBook } from "./spellBook/spellBook"
+import { SpellPage } from "./spellBook/spellPage"
 import { useRef } from "react"
 import { useReactToPrint } from "react-to-print"
 
@@ -29,7 +27,7 @@ export const Print = ({}: PrintProps) => {
         ref={contentRef}
         className={"print-preview hidden w-full print:block"}
       >
-        <SpellBook />
+        <SpellPage />
       </div>
     </>
   )

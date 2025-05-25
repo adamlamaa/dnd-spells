@@ -1,5 +1,5 @@
-import type { Spell } from "../../../../../types/spell"
-import { cn } from "../../../../../lib/utils"
+import type { Spell } from "../../../../../../types/spell"
+import { cn } from "../../../../../../lib/utils"
 import React from "react"
 import { SpellCardLayoutCell } from "./cell/spellCardLayoutCell"
 
