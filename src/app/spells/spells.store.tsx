@@ -15,10 +15,10 @@ interface Store {
     subclasses: Set<SpellSubClass>
     spells: Set<string>
   }
-  updateLevelFilter: (value: SpellLevel, active: boolean) => void
-  updateClassFilter: (value: SpellClass, active: boolean) => void
-  updateSubClassFilter: (value: SpellSubClass, active: boolean) => void
-  updateSpellsFilter: (value: string, active: boolean) => void
+  updateLevelFilter: (values: SpellLevel[], active: boolean) => void
+  updateClassFilter: (values: SpellClass[], active: boolean) => void
+  updateSubClassFilter: (values: SpellSubClass[], active: boolean) => void
+  updateSpellsFilter: (values: string[], active: boolean) => void
 }
 
 const StoreContext = createContext<StoreApi<Store> | undefined>(undefined)
@@ -33,10 +33,13 @@ const SpellStoreProvider = ({ children }: { children: ReactNode }) => {
         spells: new Set<string>(),
       },
       getFilters: () => get().filters,
-      updateLevelFilter: (value: SpellLevel, active: boolean) => {
+      updateLevelFilter: (values: SpellLevel[], active: boolean) => {
         const levelUpdated = get().filters.level
-        if (active) levelUpdated.add(value)
-        else levelUpdated.delete(value)
+        if (active) {
+          for (const value of values) levelUpdated.add(value)
+        } else {
+          for (const value of values) levelUpdated.delete(value)
+        }
         set((state) => {
           return {
             ...state,
@@ -44,10 +47,13 @@ const SpellStoreProvider = ({ children }: { children: ReactNode }) => {
           }
         })
       },
-      updateClassFilter: (value: SpellClass, active: boolean) => {
+      updateClassFilter: (values: SpellClass[], active: boolean) => {
         const classUpdated = get().filters.class
-        if (active) classUpdated.add(value)
-        else classUpdated.delete(value)
+        if (active) {
+          for (const value of values) classUpdated.add(value)
+        } else {
+          for (const value of values) classUpdated.delete(value)
+        }
         set((state) => {
           return {
             ...state,
@@ -55,10 +61,13 @@ const SpellStoreProvider = ({ children }: { children: ReactNode }) => {
           }
         })
       },
-      updateSubClassFilter: (value: SpellSubClass, active: boolean) => {
+      updateSubClassFilter: (values: SpellSubClass[], active: boolean) => {
         const subClassUpdated = get().filters.subclasses
-        if (active) subClassUpdated.add(value)
-        else subClassUpdated.delete(value)
+        if (active) {
+          for (const value of values) subClassUpdated.add(value)
+        } else {
+          for (const value of values) subClassUpdated.delete(value)
+        }
         set((state) => {
           return {
             ...state,
@@ -66,10 +75,13 @@ const SpellStoreProvider = ({ children }: { children: ReactNode }) => {
           }
         })
       },
-      updateSpellsFilter: (value: string, active: boolean) => {
+      updateSpellsFilter: (values: string[], active: boolean) => {
         const spellsUpdated = get().filters.spells
-        if (active) spellsUpdated.add(value)
-        else spellsUpdated.delete(value)
+        if (active) {
+          for (const value of values) spellsUpdated.add(value)
+        } else {
+          for (const value of values) spellsUpdated.delete(value)
+        }
         set((state) => {
           return {
             ...state,

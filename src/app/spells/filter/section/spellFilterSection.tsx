@@ -3,13 +3,15 @@ import { Checkbox } from "@/components/ui/checkbox"
 interface SpellFilterSectionProps<T> {
   title: string
   entries: { key: string; label: string }[]
-  onChange: (key: T, checked: boolean) => void
+  onChange: (key: T[], checked: boolean) => void
+  active: Set<T>
 }
 
 export const SpellFilterSection = <T,>({
   title,
   entries,
   onChange,
+  active,
 }: SpellFilterSectionProps<T>) => {
   return (
     <div
@@ -18,14 +20,21 @@ export const SpellFilterSection = <T,>({
       <h2>{title}</h2>
       <div className={"h-[300px] overflow-y-auto"}>
         <div className={"flex items-center gap-2"}>
-          <Checkbox /> All
+          <Checkbox
+            checked={entries.length === active.size}
+            onCheckedChange={(checked) => {
+              onChange(entries.map(({ key }) => key) as T[], !!checked)
+            }}
+          />{" "}
+          All
         </div>
         {entries.map(({ key, label }) => (
           <div key={key} className={"flex items-center gap-2"}>
             <Checkbox
               key={key}
+              checked={active.has(key as T)}
               onCheckedChange={(checked) => {
-                onChange(key as T, !!checked)
+                onChange([key as T], !!checked)
               }}
             />
             {label}

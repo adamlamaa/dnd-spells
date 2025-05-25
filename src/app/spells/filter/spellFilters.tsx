@@ -6,12 +6,14 @@ import { useShallow } from "zustand/react/shallow"
 
 export const SpellFilters = () => {
   const {
+    filters,
     updateLevelFilter,
     updateClassFilter,
     updateSubClassFilter,
     updateSpellsFilter,
   } = useSpellStore(
     useShallow((state) => ({
+      filters: state.filters,
       updateLevelFilter: state.updateLevelFilter,
       updateClassFilter: state.updateClassFilter,
       updateSubClassFilter: state.updateSubClassFilter,
@@ -28,6 +30,7 @@ export const SpellFilters = () => {
           label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
         }))}
         onChange={updateLevelFilter}
+        active={filters.level}
       />
       <SpellFilterSection
         title={"Class"}
@@ -36,6 +39,7 @@ export const SpellFilters = () => {
           label,
         }))}
         onChange={updateClassFilter}
+        active={filters.class}
       />
       <SpellFilterSection
         title={"Subclass"}
@@ -44,6 +48,7 @@ export const SpellFilters = () => {
           label,
         }))}
         onChange={updateSubClassFilter}
+        active={filters.subclasses}
       />
       <SpellFilterSection
         title={"Spell"}
@@ -52,6 +57,7 @@ export const SpellFilters = () => {
           label: spell.name,
         }))}
         onChange={updateSpellsFilter}
+        active={filters.spells}
       />
     </div>
   )
