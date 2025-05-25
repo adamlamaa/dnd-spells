@@ -1,14 +1,13 @@
-import type { ReactNode } from "react"
 import { Checkbox } from "@/components/ui/checkbox"
 
 interface SpellFilterSectionProps {
   title: string
-  children?: ReactNode
+  entries: { key: string; label: string }[]
 }
 
 export const SpellFilterSection = ({
   title,
-  children,
+  entries,
 }: SpellFilterSectionProps) => {
   return (
     <div
@@ -19,8 +18,17 @@ export const SpellFilterSection = ({
         <div className={"flex items-center gap-2"}>
           <Checkbox /> All
         </div>
-
-        {children}
+        {entries.map(({ key, label }) => (
+          <div key={key} className={"flex items-center gap-2"}>
+            <Checkbox
+              key={key}
+              onCheckedChange={(checked) => {
+                console.log(`Toggled ${key}`, checked)
+              }}
+            />
+            {label}
+          </div>
+        ))}
       </div>
     </div>
   )
