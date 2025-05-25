@@ -35,7 +35,7 @@ const SpellSubClass = {
   paladin_oath_of_vengeance: "Oath of Vengeance",
 }
 
-export const SpellFilters = ({ id }: SpellFiltersProps) => {
+export const SpellFilters = ({}: SpellFiltersProps) => {
   return (
     <div className={"flex w-full flex-wrap gap-2"}>
       <SpellFilterSection title={"Level"}>

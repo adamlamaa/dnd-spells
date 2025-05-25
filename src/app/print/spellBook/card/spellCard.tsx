@@ -1,4 +1,4 @@
-import type { Spell } from "../../../../types/spell"
+import type { Spell } from "@/types/spell"
 import { SpellCardLayout } from "./layout/spellCardLayout"
 
 interface SpellCardProps {
