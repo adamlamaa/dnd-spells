@@ -1,4 +1,4 @@
-import { Spells } from "@/app/spells/Spells"
+import { Spells } from "@/app/spells/spells"
 
 export default function HomePage() {
   return (
