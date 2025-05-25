@@ -21,8 +21,6 @@ export const SpellPage = ({}: SpellPageProps) => {
       : spells.filter((spell) => filters.level.has(spell.level as SpellLevel))
   ) as Spell[]
 
-  console.log("SpellPage filters", spellLevelsInScope)
-
   const spellsInScope =
     filters.class.size === 0 &&
     filters.subclasses.size === 0 &&
