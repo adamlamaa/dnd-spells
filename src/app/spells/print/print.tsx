@@ -15,13 +15,14 @@ export const Print = ({}: PrintProps) => {
 
   return (
     <>
+      <div>With current selection: X / 400</div>
       <button
         onClick={reactToPrintFn}
         className={
           "rounded-full bg-gray-800 px-6 py-2 text-white transition hover:bg-gray-700 focus:ring-2 focus:ring-gray-600 focus:outline-none"
         }
       >
-        Print
+        Print Spells
       </button>
       <div
         ref={contentRef}

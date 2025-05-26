@@ -7,8 +7,10 @@ import { SpellStoreProvider } from "@/app/spells/spells.store"
 export const Spells = () => {
   return (
     <SpellStoreProvider>
-      <SpellFilters />
-      <Print />
+      <div className={"flex w-full flex-col items-center gap-8"}>
+        <SpellFilters />
+        <Print />
+      </div>
     </SpellStoreProvider>
   )
 }

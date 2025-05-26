@@ -22,43 +22,47 @@ export const SpellFilters = () => {
   )
 
   return (
-    <div className={"flex w-full flex-wrap gap-2"}>
-      <SpellFilterSection
-        title={"Level"}
-        entries={SpellLevels.map((level) => ({
-          key: level,
-          label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
-        }))}
-        onChange={updateLevelFilter}
-        active={filters.level}
-      />
-      <SpellFilterSection
-        title={"Class"}
-        entries={Object.entries(SpellClasses).map(([key, label]) => ({
-          key,
-          label,
-        }))}
-        onChange={updateClassFilter}
-        active={filters.class}
-      />
-      <SpellFilterSection
-        title={"Subclass"}
-        entries={Object.entries(SpellSubClasses).map(([key, label]) => ({
-          key,
-          label,
-        }))}
-        onChange={updateSubClassFilter}
-        active={filters.subclasses}
-      />
-      <SpellFilterSection
-        title={"Spell"}
-        entries={spells.map((spell) => ({
-          key: spell.name,
-          label: spell.name,
-        }))}
-        onChange={updateSpellsFilter}
-        active={filters.spells}
-      />
-    </div>
+    <>
+      <div className={"flex w-full flex-wrap gap-2"}>
+        <SpellFilterSection
+          title={"Class"}
+          entries={Object.entries(SpellClasses).map(([key, label]) => ({
+            key,
+            label,
+          }))}
+          onChange={updateClassFilter}
+          active={filters.class}
+        />
+        <SpellFilterSection
+          title={"Subclass"}
+          entries={Object.entries(SpellSubClasses).map(([key, label]) => ({
+            key,
+            label,
+          }))}
+          onChange={updateSubClassFilter}
+          active={filters.subclasses}
+        />
+        <SpellFilterSection
+          title={"Spell"}
+          entries={spells.map((spell) => ({
+            key: spell.name,
+            label: spell.name,
+          }))}
+          onChange={updateSpellsFilter}
+          active={filters.spells}
+        />
+        <div className={"bg-gray-100"}>
+          <SpellFilterSection
+            title={"Print These Levels"}
+            entries={SpellLevels.map((level) => ({
+              key: level,
+              label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
+            }))}
+            onChange={updateLevelFilter}
+            active={filters.level}
+          />
+        </div>
+      </div>
+    </>
   )
 }
