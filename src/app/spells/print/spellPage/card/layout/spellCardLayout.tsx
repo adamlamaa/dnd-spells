@@ -51,7 +51,7 @@ export const SpellCardLayout = ({ spell, side }: SpellCardLayoutProps) => {
           }
         />
       </div>
-      {spell.components && (
+      {side === "front" && spell.components && (
         <p className={"flex justify-end text-xs text-white"}>
           {spell.components.raw}
         </p>
