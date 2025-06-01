@@ -68,15 +68,18 @@ const getCardText = ({
   side: SpellCardSide
 }) => {
   if (side === "front") {
-    if (!spell.description_continued && spell.higher_levels)
+    if (spell.description_continued === undefined && spell.higher_levels)
       return atHigherLevels(spell.description, spell.higher_levels)
     return spell.description
-  } else if (side === "back" && spell.description_continued) {
+  } else if (side === "back" && spell.description_continued !== undefined) {
     if (spell.higher_levels)
       return atHigherLevels(spell.description_continued, spell.higher_levels)
     return spell.description_continued
   }
 }
 
-const atHigherLevels = (description: string, higherLevel: string) =>
-  `${description}\n\nAt Higher Levels: ${higherLevel}`
+const atHigherLevels = (description: string, higherLevel: string) => {
+  const higherLevelText = `At Higher Levels: ${higherLevel}`
+  if (description === "") return higherLevelText
+  return `${description}\n\n${higherLevelText}`
+}

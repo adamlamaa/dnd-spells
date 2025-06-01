@@ -10,7 +10,7 @@ export const SpellCard = ({ spell }: SpellCardProps) => {
     <>
       <SpellCardLayout spell={spell} side="front" />
       {/* Print backside if there is continued text*/}
-      {spell.description_continued && (
+      {spell.description_continued !== undefined && (
         <SpellCardLayout spell={spell} side={"back"} />
       )}
     </>
