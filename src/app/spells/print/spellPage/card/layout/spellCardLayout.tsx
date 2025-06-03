@@ -1,5 +1,5 @@
-import type { Spell } from "../../../../../../types/spell"
-import { cn } from "../../../../../../lib/utils"
+import type { Spell } from "@/types/spell"
+import { cn } from "@/lib/utils"
 import React from "react"
 import { SpellCardLayoutCell } from "./cell/spellCardLayoutCell"
 
@@ -49,6 +49,7 @@ export const SpellCardLayout = ({ spell, side }: SpellCardLayoutProps) => {
           continued={
             side === "front" && spell.description_continued !== undefined
           }
+          longSpell={spell.long_spell}
         />
       </div>
       {side === "front" && spell.components && (

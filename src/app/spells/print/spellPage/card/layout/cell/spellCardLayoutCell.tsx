@@ -1,6 +1,6 @@
 import React from "react"
 import type { ClassValue } from "clsx"
-import { cn } from "../../../../../../../lib/utils"
+import { cn } from "@/lib/utils"
 
 interface SpellCardLayoutCellProps {
   continued?: boolean
@@ -8,6 +8,7 @@ interface SpellCardLayoutCellProps {
   bold?: boolean
   smallText?: boolean
   forceSmall?: boolean
+  longSpell?: boolean
   lineBreaks?: boolean
   className?: ClassValue
   text?: string
@@ -17,22 +18,25 @@ export const SpellCardLayoutCell = ({
   continued = false,
   center = false,
   bold = false,
-  smallText = false,
   forceSmall = false,
+  longSpell = false,
   lineBreaks = false,
   className,
   text,
 }: SpellCardLayoutCellProps) => {
   const textLength = text?.length ?? 0
-  const isSmallText = smallText || (forceSmall && textLength > 15)
+  const font = longSpell
+    ? "text-s"
+    : forceSmall && textLength > 14
+      ? "text-xs"
+      : "text-base"
 
   return (
     <div
       className={cn(
-        "min-h-[15px] w-full items-center rounded-lg border-2 border-white bg-white p-1 text-base",
+        `min-h-[15px] w-full items-center rounded-lg border-2 border-white bg-white p-1 ${font}`,
         center && "flex items-center justify-center",
         bold && "font-bold",
-        isSmallText && "text-xs",
         continued && "relative",
         className,
       )}
