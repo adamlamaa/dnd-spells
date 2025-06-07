@@ -6,15 +6,22 @@ import { SpellCardLayoutCell } from "./cell/spellCardLayoutCell"
 type CardLayoutPropSpell = Pick<Spell, "name" | "description"> &
   Partial<Omit<Spell, "name" | "description">>
 
-type SpellCardSide = "front" | "back"
-
 interface SpellCardLayoutProps {
   spell: CardLayoutPropSpell
-  continued?: boolean
-  back?: boolean
-  side: SpellCardSide
+  text: string
+  index: number
 }
-export const SpellCardLayout = ({ spell, side }: SpellCardLayoutProps) => {
+export const SpellCardLayout = ({
+  spell,
+  text,
+  index,
+}: SpellCardLayoutProps) => {
+  const mainCard = index === 0
+  const spellName =
+    !mainCard && spell.description.length > 2
+      ? `${spell.name} (${index + 1})`
+      : spell.name
+
   return (
     <div
       className={
@@ -22,21 +29,19 @@ export const SpellCardLayout = ({ spell, side }: SpellCardLayoutProps) => {
       }
     >
       <div className={"flex h-full flex-col gap-2"}>
-        <div className={cn("flex", side === "front" && "gap-2")}>
+        <div className={cn("flex", mainCard && "gap-2")}>
           <div className={"flex-1"}>
-            {side === "front" && (
-              <SpellCardLayoutCell center bold text={spell.level} />
-            )}
+            {mainCard && <SpellCardLayoutCell center bold text={spell.level} />}
           </div>
           <SpellCardLayoutCell
             center
             bold
-            className={side === "front" ? "flex-[2]" : undefined}
-            text={spell.name}
+            className={mainCard ? "flex-[2]" : undefined}
+            text={spellName}
           />
         </div>
-        {side === "front" ? (
-          <div className="flex gap-2">
+        {mainCard ? (
+          <div className="flex max-h-6 gap-2">
             <SpellCardLayoutCell center forceSmall text={spell.casting_time} />
             <SpellCardLayoutCell center forceSmall text={spell.range} />
             <SpellCardLayoutCell center forceSmall text={spell.duration} />
@@ -45,14 +50,12 @@ export const SpellCardLayout = ({ spell, side }: SpellCardLayoutProps) => {
         <SpellCardLayoutCell
           lineBreaks
           className={"h-full px-2"}
-          text={getCardText({ spell, side })}
-          continued={
-            side === "front" && spell.description_continued !== undefined
-          }
+          text={evaluateCardText({ spell, text, index })}
+          continued={mainCard && spell.description.length > 1}
           longSpell={spell.long_spell}
         />
       </div>
-      {side === "front" && spell.components && (
+      {mainCard && spell.components && (
         <p className={"flex justify-end text-xs text-white"}>
           {spell.components.raw}
         </p>
@@ -61,22 +64,18 @@ export const SpellCardLayout = ({ spell, side }: SpellCardLayoutProps) => {
   )
 }
 
-const getCardText = ({
+const evaluateCardText = ({
   spell,
-  side,
+  text,
+  index,
 }: {
   spell: CardLayoutPropSpell
-  side: SpellCardSide
+  text: string
+  index: number
 }) => {
-  if (side === "front") {
-    if (spell.description_continued === undefined && spell.higher_levels)
-      return atHigherLevels(spell.description, spell.higher_levels)
-    return spell.description
-  } else if (side === "back" && spell.description_continued !== undefined) {
-    if (spell.higher_levels)
-      return atHigherLevels(spell.description_continued, spell.higher_levels)
-    return spell.description_continued
-  }
+  if (index + 1 === spell.description.length && spell.higher_levels)
+    return atHigherLevels(text, spell.higher_levels)
+  return text
 }
 
 const atHigherLevels = (description: string, higherLevel: string) => {

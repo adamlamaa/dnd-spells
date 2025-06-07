@@ -2,8 +2,7 @@ export interface Spell {
   casting_time: string
   classes: SpellClass[]
   components: SpellComponents
-  description: string
-  description_continued?: string
+  description: string[]
   duration: string
   level: SpellLevel
   name: string

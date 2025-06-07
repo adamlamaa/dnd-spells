@@ -8,11 +8,14 @@ interface SpellCardProps {
 export const SpellCard = ({ spell }: SpellCardProps) => {
   return (
     <>
-      <SpellCardLayout spell={spell} side="front" />
-      {/* Print backside if there is continued text*/}
-      {spell.description_continued !== undefined && (
-        <SpellCardLayout spell={spell} side={"back"} />
-      )}
+      {spell.description.map((text, index) => (
+        <SpellCardLayout
+          key={spell.name + index}
+          spell={spell}
+          text={text}
+          index={index}
+        />
+      ))}
     </>
   )
 }
