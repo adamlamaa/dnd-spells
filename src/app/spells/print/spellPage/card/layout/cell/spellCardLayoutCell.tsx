@@ -19,17 +19,12 @@ export const SpellCardLayoutCell = ({
   center = false,
   bold = false,
   forceSmall = false,
-  longSpell = false,
   lineBreaks = false,
   className,
   text,
 }: SpellCardLayoutCellProps) => {
   const textLength = text?.length ?? 0
-  const font = longSpell
-    ? "text-s"
-    : forceSmall && textLength > 14
-      ? "text-xs"
-      : "text-base"
+  const font = forceSmall && textLength > 14 ? "text-xs" : "text-base"
 
   return (
     <div

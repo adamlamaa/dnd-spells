@@ -12,7 +12,6 @@ export interface Spell {
   tags: string[]
   type: string
   higher_levels?: string
-  long_spell?: boolean
 }
 
 export const SpellClasses = {

@@ -51,12 +51,11 @@ export const SpellCardLayout = ({
           lineBreaks
           className={"h-full px-2"}
           text={evaluateCardText({ spell, text, index })}
-          continued={mainCard && spell.description.length > 1}
-          longSpell={spell.long_spell}
+          continued={index + 1 < spell.description.length}
         />
       </div>
       {mainCard && spell.components && (
-        <p className={"flex justify-end text-xs text-white"}>
+        <p className={"flex justify-end text-right text-xs text-white"}>
           {spell.components.raw}
         </p>
       )}
