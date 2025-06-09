@@ -1,10 +1,12 @@
 import { Checkbox } from "@/components/ui/checkbox"
+import { Info } from "lucide-react"
 
 interface SpellFilterSectionProps<T> {
   title: string
   entries: { key: string; label: string }[]
   onChange: (key: T[], checked: boolean) => void
   active: Set<T>
+  info?: (key: string) => void
 }
 
 export const SpellFilterSection = <T,>({
@@ -12,6 +14,7 @@ export const SpellFilterSection = <T,>({
   entries,
   onChange,
   active,
+  info,
 }: SpellFilterSectionProps<T>) => {
   return (
     <div
@@ -38,6 +41,13 @@ export const SpellFilterSection = <T,>({
               }}
             />
             {label}
+            {info && (
+              <Info
+                size={15}
+                className={"cursor-pointer"}
+                onClick={() => info(key)}
+              />
+            )}
           </div>
         ))}
       </div>
