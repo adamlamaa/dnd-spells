@@ -5,6 +5,7 @@ import { useSpellStore } from "@/app/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
 import spells from "@/spells.json"
 import type { Spell, SpellLevel, SpellSubClass } from "@/types/spell"
+import { sortSpellsByLevel } from "@/lib/sortSpellsByLevel"
 
 interface PrintProps {
   id?: string
@@ -43,11 +44,7 @@ export const Print = ({}: PrintProps) => {
             filters.spells.has(spell.name),
         )
 
-  const spellsSorted = spellsInScope.sort((a, b) => {
-    const levelA = a.level === "cantrip" ? 0 : parseInt(a.level, 10)
-    const levelB = b.level === "cantrip" ? 0 : parseInt(b.level, 10)
-    return levelA - levelB
-  })
+  const spellsSorted = sortSpellsByLevel(spellsInScope)
 
   return (
     <>
