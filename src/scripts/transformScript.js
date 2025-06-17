@@ -44,7 +44,7 @@ fs.readFile(spellsFilePath, "utf8", (err, data) => {
         if (err) {
           console.error("Error writing spellnew.json:", err)
         } else {
-          console.log("Updated spells saved to spellnew.json")
+          console.info("Updated spells saved to spellnew.json")
         }
       },
     )

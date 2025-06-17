@@ -1,8 +1,14 @@
 import { createContext, type ReactNode, useContext, useState } from "react"
 import { createStore, type StoreApi, useStore } from "zustand"
-import type { SpellClass, SpellLevel, SpellSubClass } from "@/types/spell"
+import type {
+  Spell,
+  SpellClass,
+  SpellLevel,
+  SpellSubClass,
+} from "@/types/spell"
 
 interface Store {
+  spells: Spell[]
   filters: {
     level: Set<SpellLevel>
     class: Set<SpellClass>
@@ -23,9 +29,16 @@ interface Store {
 
 const StoreContext = createContext<StoreApi<Store> | undefined>(undefined)
 
-const SpellStoreProvider = ({ children }: { children: ReactNode }) => {
+const SpellStoreProvider = ({
+  spells,
+  children,
+}: {
+  spells: Spell[]
+  children: ReactNode
+}) => {
   const [store] = useState(() =>
     createStore<Store>()((set, get) => ({
+      spells,
       filters: {
         level: new Set<SpellLevel>(),
         class: new Set<SpellClass>(),

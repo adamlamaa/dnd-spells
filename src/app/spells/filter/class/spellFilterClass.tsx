@@ -1,25 +1,23 @@
 import { useSpellStore } from "@/app/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
 import { SpellFilterSection } from "@/app/spells/filter/shared/spellFilterSection"
-import { type Spell, SpellClasses } from "@/types/spell"
+import { type SpellClass, SpellClasses } from "@/types/spell"
 import { useState } from "react"
-import spells from "@/spells.json"
 import { SpellFilterClassInfo } from "@/app/spells/filter/class/info/spellFilterClassInfo"
 
 export const SpellFilterClass = () => {
-  const { filters, updateClassFilter } = useSpellStore(
+  const { spells, filters, updateClassFilter } = useSpellStore(
     useShallow((state) => ({
+      spells: state.spells,
       filters: state.filters,
       updateClassFilter: state.updateClassFilter,
     })),
   )
 
-  const [showInfoOnSpellClass, setShowInfoOnSpellClass] = useState<string>()
-  const showInfoOnSpells = (
-    !!showInfoOnSpellClass
-      ? spells.filter((spell) => spell.classes.includes(showInfoOnSpellClass))
-      : undefined
-  ) as Spell[] | undefined
+  const [showInfoOnSpellClass, setShowInfoOnSpellClass] = useState<SpellClass>()
+  const showInfoOnSpells = !!showInfoOnSpellClass
+    ? spells.filter((spell) => spell.classes.includes(showInfoOnSpellClass))
+    : undefined
 
   return (
     <>
@@ -31,7 +29,9 @@ export const SpellFilterClass = () => {
         }))}
         onChange={updateClassFilter}
         active={filters.class}
-        info={(spellClass: string) => setShowInfoOnSpellClass(spellClass)}
+        info={(spellClass: string) =>
+          setShowInfoOnSpellClass(spellClass as SpellClass)
+        }
       />
       {showInfoOnSpellClass && showInfoOnSpells && (
         <SpellFilterClassInfo
