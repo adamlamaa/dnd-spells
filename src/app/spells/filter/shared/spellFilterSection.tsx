@@ -20,7 +20,7 @@ export const SpellFilterSection = <T,>({
     <div
       className={"min-w-[200px] flex-1 rounded-lg border-1 border-gray-200 p-4"}
     >
-      <h2>{title}</h2>
+      <h2 className={""}>{title}</h2>
       <div className={"h-[300px] overflow-y-auto"}>
         <div className={"flex items-center gap-2"}>
           <Checkbox

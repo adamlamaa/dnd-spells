@@ -12,16 +12,14 @@ export const SpellFilterLevel = () => {
   )
 
   return (
-    <div className={"bg-gray-100"}>
-      <SpellFilterSection
-        title={"Print These Levels"}
-        entries={SpellLevels.map((level) => ({
-          key: level,
-          label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
-        }))}
-        onChange={updateLevelFilter}
-        active={filters.level}
-      />
-    </div>
+    <SpellFilterSection
+      title={"Print These Levels"}
+      entries={SpellLevels.map((level) => ({
+        key: level,
+        label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
+      }))}
+      onChange={updateLevelFilter}
+      active={filters.level}
+    />
   )
 }
