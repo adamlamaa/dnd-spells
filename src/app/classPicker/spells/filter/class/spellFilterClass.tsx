@@ -1,9 +1,9 @@
-import { useSpellStore } from "@/app/spells/spells.store"
+import { useSpellStore } from "@/app/classPicker/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
-import { SpellFilterSection } from "@/app/spells/filter/shared/spellFilterSection"
+import { SpellFilterSection } from "@/app/classPicker/spells/filter/shared/spellFilterSection"
 import { type SpellClass, SpellClasses } from "@/types/spell"
 import { useState } from "react"
-import { SpellFilterClassInfo } from "@/app/spells/filter/class/info/spellFilterClassInfo"
+import { SpellFilterClassInfo } from "@/app/classPicker/spells/filter/class/info/spellFilterClassInfo"
 
 export const SpellFilterClass = () => {
   const { spells, filters, updateClassFilter } = useSpellStore(

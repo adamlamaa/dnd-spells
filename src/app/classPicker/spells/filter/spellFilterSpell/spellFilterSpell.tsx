@@ -1,8 +1,8 @@
-import { SpellFilterSection } from "@/app/spells/filter/shared/spellFilterSection"
-import { useSpellStore } from "@/app/spells/spells.store"
+import { SpellFilterSection } from "@/app/classPicker/spells/filter/shared/spellFilterSection"
+import { useSpellStore } from "@/app/classPicker/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
 import { useState } from "react"
-import { SpellFilterSpellInfo } from "@/app/spells/filter/spellFilterSpell/info/spellFilterSpellInfo"
+import { SpellFilterSpellInfo } from "@/app/classPicker/spells/filter/spellFilterSpell/info/spellFilterSpellInfo"
 
 export const SpellFilterSpell = () => {
   const { spells, filters, updateSpellsFilter } = useSpellStore(

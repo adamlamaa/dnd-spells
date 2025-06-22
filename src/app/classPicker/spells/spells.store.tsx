@@ -1,10 +1,11 @@
 import { createContext, type ReactNode, useContext, useState } from "react"
 import { createStore, type StoreApi, useStore } from "zustand"
-import type {
-  Spell,
-  SpellClass,
-  SpellLevel,
-  SpellSubClass,
+import {
+  type Spell,
+  type SpellClass,
+  SpellClasses,
+  type SpellLevel,
+  type SpellSubClass,
 } from "@/types/spell"
 
 interface Store {
@@ -31,17 +32,24 @@ const StoreContext = createContext<StoreApi<Store> | undefined>(undefined)
 
 const SpellStoreProvider = ({
   spells,
+  initFilter,
+  updateAppQuery,
   children,
 }: {
   spells: Spell[]
+  initFilter: string | null
+  updateAppQuery: (value: string) => void
   children: ReactNode
 }) => {
+  const spellClassInit = parseInitFilter(initFilter)
   const [store] = useState(() =>
     createStore<Store>()((set, get) => ({
       spells,
       filters: {
         level: new Set<SpellLevel>(),
-        class: new Set<SpellClass>(),
+        class: spellClassInit
+          ? new Set<SpellClass>([spellClassInit])
+          : new Set<SpellClass>(),
         subclasses: new Set<SpellSubClass>(),
         spells: new Set<string>(),
       },
@@ -53,6 +61,7 @@ const SpellStoreProvider = ({
         } else {
           for (const value of values) levelUpdated.delete(value)
         }
+        updateAppQuery("custom")
         set((state) => {
           return {
             ...state,
@@ -67,6 +76,7 @@ const SpellStoreProvider = ({
         } else {
           for (const value of values) classUpdated.delete(value)
         }
+        updateAppQuery("custom")
         set((state) => {
           return {
             ...state,
@@ -81,6 +91,7 @@ const SpellStoreProvider = ({
         } else {
           for (const value of values) subClassUpdated.delete(value)
         }
+        updateAppQuery("custom")
         set((state) => {
           return {
             ...state,
@@ -95,6 +106,7 @@ const SpellStoreProvider = ({
         } else {
           for (const value of values) spellsUpdated.delete(value)
         }
+        updateAppQuery("custom")
         set((state) => {
           return {
             ...state,
@@ -113,6 +125,16 @@ function useSpellStore<T>(selector: (state: Store) => T) {
   if (!storeApi)
     throw new Error("storeApi is empty, ensure SpellStoreProvider is used")
   return useStore(storeApi, selector)
+}
+
+const parseInitFilter = (initFilter: string | null): SpellClass | undefined => {
+  if (!initFilter) return undefined
+  if (initFilter === "custom") return undefined
+  const isValidClass = initFilter
+    ? Object.keys(SpellClasses).includes(initFilter)
+    : false
+  if (!isValidClass) return undefined
+  return initFilter as SpellClass
 }
 
 export { SpellStoreProvider, useSpellStore }

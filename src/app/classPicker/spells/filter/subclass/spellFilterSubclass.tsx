@@ -1,6 +1,6 @@
 import { SpellSubClasses } from "@/types/spell"
-import { SpellFilterSection } from "@/app/spells/filter/shared/spellFilterSection"
-import { useSpellStore } from "@/app/spells/spells.store"
+import { SpellFilterSection } from "@/app/classPicker/spells/filter/shared/spellFilterSection"
+import { useSpellStore } from "@/app/classPicker/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
 
 export const SpellFilterSubclass = () => {
