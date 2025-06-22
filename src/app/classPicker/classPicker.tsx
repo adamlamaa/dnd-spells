@@ -12,11 +12,20 @@ export const ClassPicker = () => {
     return (
       <div className={"flex gap-4"}>
         {Object.entries(SpellClasses).map(([key, label]) => (
-          <Button key={key} onClick={() => setClassSelected(key)}>
+          <Button
+            variant={"secondary"}
+            key={key}
+            onClick={() => setClassSelected(key)}
+          >
             {label}
           </Button>
         ))}
-        <Button onClick={() => setClassSelected("custom")}>Custom</Button>
+        <Button
+          variant={"secondary"}
+          onClick={() => setClassSelected("custom")}
+        >
+          Custom
+        </Button>
       </div>
     )
   }
