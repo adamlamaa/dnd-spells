@@ -9,6 +9,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    background: var(--hdr-gradient);
   }
   h2 {
     @apply text-2xl font-bold;
@@ -146,4 +147,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.541 0.281 293.009);
+  --hdr-gradient: radial-gradient(
+          farthest-corner circle at 41% 37% in oklab,
+          oklch(0% 0.00 222) 25% 25%, var(--primary) 100%
+  );
 }
