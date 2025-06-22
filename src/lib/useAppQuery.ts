@@ -21,7 +21,9 @@ export const useAppQuery = (paramName: string) => {
   )
 
   const setQuery = (value: string) => {
-    router.push(pathname + "?" + createQueryString(paramName, value))
+    router.push(pathname + "?" + createQueryString(paramName, value), {
+      scroll: false,
+    })
   }
 
   return [query, setQuery] as const
