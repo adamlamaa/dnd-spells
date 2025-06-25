@@ -1,13 +1,19 @@
 import { ClassPicker } from "@/app/classPicker/classPicker"
 import { Suspense } from "react"
+import { IntroductionSection } from "@/app/introduction/introductionSection"
 
 export default function HomePage() {
   return (
     <Suspense>
-      <main className="flex min-h-screen flex-col items-center justify-center">
-        <div className="container flex flex-col items-center justify-center gap-2 px-4 py-16">
-          <h1 className="pb-10 text-5xl font-extrabold">DND Spells</h1>
-          <ClassPicker />
+      <main className="flex min-h-screen flex-col">
+        <div className="flex flex-col gap-10 p-16">
+          <header className={"flex flex-col items-center gap-10"}>
+            <h1 className="text-5xl font-extrabold">DND Spells</h1>
+            <IntroductionSection />
+          </header>
+          <div>
+            <ClassPicker />
+          </div>
         </div>
       </main>
     </Suspense>
