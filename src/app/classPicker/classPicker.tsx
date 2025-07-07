@@ -10,7 +10,7 @@ export const ClassPicker = () => {
 
   if (!classSelected) {
     return (
-      <div className={"flex items-center justify-center gap-4"}>
+      <div className={"flex flex-wrap items-center justify-center gap-4"}>
         {Object.entries(SpellClasses).map(([key, label]) => (
           <Button
             variant={"secondary"}
