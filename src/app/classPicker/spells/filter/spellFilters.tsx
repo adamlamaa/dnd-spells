@@ -6,7 +6,7 @@ import { SpellFilterLevel } from "@/app/classPicker/spells/filter/level/spellFil
 export const SpellFilters = () => {
   return (
     <>
-      <div className={"flex w-full flex-wrap gap-2"}>
+      <div className={"grid w-full grid-cols-1 gap-2 md:grid-cols-4"}>
         <SpellFilterClass />
         <SpellFilterSubclass />
         <SpellFilterSpell />
