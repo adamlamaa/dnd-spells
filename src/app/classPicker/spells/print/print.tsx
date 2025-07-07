@@ -5,6 +5,7 @@ import { useSpellStore } from "@/app/classPicker/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
 import type { SpellSubClass } from "@/types/spell"
 import { sortSpellsByLevel } from "@/lib/sortSpellsByLevel"
+import { Button } from "@/components/ui/button"
 
 interface PrintProps {
   id?: string
@@ -17,10 +18,11 @@ export const Print = ({}: PrintProps) => {
     documentTitle: "DND Spells",
   })
 
-  const { spells, filters } = useSpellStore(
+  const { spells, filters, clearFilters } = useSpellStore(
     useShallow((state) => ({
       spells: state.spells,
       filters: state.filters,
+      clearFilters: state.clearFilters,
     })),
   )
 
@@ -50,14 +52,12 @@ export const Print = ({}: PrintProps) => {
       <div>
         With current selection: {spellsSorted.length} / {spells.length}
       </div>
-      <button
-        onClick={reactToPrintFn}
-        className={
-          "rounded-full bg-gray-800 px-6 py-2 text-white transition hover:bg-gray-700 focus:ring-2 focus:ring-gray-600 focus:outline-none"
-        }
-      >
-        Print Spells
-      </button>
+      <div className={"flex gap-10"}>
+        <Button onClick={clearFilters} variant={"ghost"}>
+          Clear filters
+        </Button>
+        <Button onClick={reactToPrintFn}>Print spells</Button>
+      </div>
       <div
         ref={contentRef}
         className={"print-preview hidden w-full print:block"}

@@ -26,6 +26,7 @@ interface Store {
   updateClassFilter: (values: SpellClass[], active: boolean) => void
   updateSubClassFilter: (values: SpellSubClass[], active: boolean) => void
   updateSpellsFilter: (values: string[], active: boolean) => void
+  clearFilters: () => void
 }
 
 const StoreContext = createContext<StoreApi<Store> | undefined>(undefined)
@@ -113,6 +114,18 @@ const SpellStoreProvider = ({
             filters: { ...state.filters, spells: spellsUpdated },
           }
         })
+      },
+      clearFilters: () => {
+        updateAppQuery("custom")
+        set((state) => ({
+          ...state,
+          filters: {
+            level: new Set<SpellLevel>(),
+            class: new Set<SpellClass>(),
+            subclasses: new Set<SpellSubClass>(),
+            spells: new Set<string>(),
+          },
+        }))
       },
     })),
   )
