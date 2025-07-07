@@ -2,6 +2,9 @@ import "../styles/globals.css"
 
 import { type Metadata } from "next"
 import { Geist } from "next/font/google"
+import { GlossyBox } from "@/components/ui/glossyBox"
+import { GithubIcon, StampIcon } from "lucide-react"
+import { LinkButtonWithTooltip } from "@/components/ui/linkButtonWithTooltip"
 
 export const metadata: Metadata = {
   title: "DND Spells",
@@ -23,7 +26,25 @@ export default function RootLayout({
       className={`dark ${geist.variable}`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        <div className="flex min-h-screen flex-col">
+          <div className={"flex-1"}>{children}</div>
+          <footer>
+            <GlossyBox className="flex items-center justify-center gap-4 p-4">
+              <LinkButtonWithTooltip
+                href={"https://github.com/adamlamaa/dnd-spells"}
+                tooltipContent={"Open Source Repo"}
+                icon={<GithubIcon />}
+              />
+              <LinkButtonWithTooltip
+                href={"https://opengamingfoundation.org/ogl.html"}
+                tooltipContent={"Open Game License"}
+                icon={<StampIcon />}
+              />
+            </GlossyBox>
+          </footer>
+        </div>
+      </body>
     </html>
   )
 }
