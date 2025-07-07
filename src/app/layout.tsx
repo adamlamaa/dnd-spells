@@ -5,6 +5,7 @@ import { Geist } from "next/font/google"
 import { GlossyBox } from "@/components/ui/glossyBox"
 import { GithubIcon, StampIcon } from "lucide-react"
 import { LinkButtonWithTooltip } from "@/components/ui/linkButtonWithTooltip"
+import type { ReactNode } from "react"
 
 export const metadata: Metadata = {
   title: "DND Spells",
@@ -19,7 +20,7 @@ const geist = Geist({
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html
       lang="en"

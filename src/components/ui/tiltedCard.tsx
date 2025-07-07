@@ -1,9 +1,10 @@
 import type { ClassValue } from "clsx"
 import { cn } from "@/lib/utils"
+import type { ReactNode } from "react"
 
 interface TiltedCardProps {
   startRotate?: ClassValue
-  children?: React.ReactNode
+  children?: ReactNode
 }
 
 export const TiltedCard = ({
