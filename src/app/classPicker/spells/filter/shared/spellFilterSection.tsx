@@ -1,5 +1,6 @@
 import { Checkbox } from "@/components/ui/checkbox"
 import { Info } from "lucide-react"
+import { GlossyBox } from "@/components/ui/glossyBox"
 
 interface SpellFilterSectionProps<T> {
   title: string
@@ -17,9 +18,7 @@ export const SpellFilterSection = <T,>({
   info,
 }: SpellFilterSectionProps<T>) => {
   return (
-    <div
-      className={"min-w-[200px] flex-1 rounded-lg border-1 border-gray-200 p-4"}
-    >
+    <GlossyBox className={"min-w-[200px] flex-1 p-4"}>
       <h2 className={""}>{title}</h2>
       <div className={"h-[300px] overflow-y-auto"}>
         <div className={"flex items-center gap-2"}>
@@ -51,6 +50,6 @@ export const SpellFilterSection = <T,>({
           </div>
         ))}
       </div>
-    </div>
+    </GlossyBox>
   )
 }
