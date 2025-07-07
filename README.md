@@ -8,6 +8,8 @@ Create dnd spell print-outs.
 # Credits
 Thanks to [src_spells](https://github.com/vorpalhex/srd_spells) for the spells data.
 
+Thanks to [https://www.flapkan.com](https://www.flapkan.com/) for the dnd class icons shared on [reddit](https://www.reddit.com/r/DnD/comments/4t57fn/dd_5e_vector_icons/).
+
 # Licensing Bits
 __Open Game License v1.0a Copyright 2000, Wizards of the Coast, Inc.__
 
