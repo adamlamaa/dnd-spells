@@ -6,6 +6,7 @@ import { GlossyBox } from "@/components/ui/glossyBox"
 import { GithubIcon, StampIcon } from "lucide-react"
 import { LinkButtonWithTooltip } from "@/components/ui/linkButtonWithTooltip"
 import type { ReactNode } from "react"
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "DND Spells",
@@ -45,6 +46,7 @@ export default function RootLayout({
             </GlossyBox>
           </footer>
         </div>
+        <Analytics />
       </body>
     </html>
   )
