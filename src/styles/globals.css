@@ -38,6 +38,30 @@
   .text-xs {
     font-size: 6px;
   }
+  /* New line spacing in markdown */
+  .markdown-content p {
+    margin-bottom: 0;
+  }
+  .markdown-content p + p {
+    margin-top: 1.5em; /* Increase for more space */
+  }
+  /* Table styling for print */
+  table {
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #000000;
+    text-align: left;
+    font-size: 8px;
+  }
+  th {
+    padding: 4px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  td {
+    padding: 2px 4px 2px 4px;
+  }
 }
 
 /* Tailwind */

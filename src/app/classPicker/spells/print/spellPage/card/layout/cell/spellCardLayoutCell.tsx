@@ -1,6 +1,7 @@
 import React from "react"
 import type { ClassValue } from "clsx"
 import { cn } from "@/lib/utils"
+import { Markdown } from "@/components/ui/markdown"
 
 interface SpellCardLayoutCellProps {
   continued?: boolean
@@ -9,7 +10,7 @@ interface SpellCardLayoutCellProps {
   smallText?: boolean
   forceSmall?: boolean
   longSpell?: boolean
-  lineBreaks?: boolean
+  markdown?: boolean
   className?: ClassValue
   text?: string
 }
@@ -19,7 +20,7 @@ export const SpellCardLayoutCell = ({
   center = false,
   bold = false,
   forceSmall = false,
-  lineBreaks = false,
+  markdown = false,
   className,
   text,
 }: SpellCardLayoutCellProps) => {
@@ -36,8 +37,8 @@ export const SpellCardLayoutCell = ({
         className,
       )}
     >
-      {lineBreaks ? (
-        <RenderWithNewLines text={text ?? ""} />
+      {markdown ? (
+        <Markdown>{text ?? ""}</Markdown>
       ) : (
         <p className={"text-center"}>{text}</p>
       )}
@@ -47,18 +48,5 @@ export const SpellCardLayoutCell = ({
         >{`Continued -->`}</div>
       )}
     </div>
-  )
-}
-
-const RenderWithNewLines = ({ text }: { text: string }) => {
-  return (
-    <p>
-      {text.split("\n").map((line, index) => (
-        <React.Fragment key={index}>
-          {line}
-          <br />
-        </React.Fragment>
-      ))}
-    </p>
   )
 }

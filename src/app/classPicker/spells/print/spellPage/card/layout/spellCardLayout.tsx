@@ -48,7 +48,7 @@ export const SpellCardLayout = ({
           </div>
         ) : null}
         <SpellCardLayoutCell
-          lineBreaks
+          markdown
           className={"h-full px-2"}
           text={evaluateCardText({ spell, text, index })}
           continued={index + 1 < spell.description.length}
