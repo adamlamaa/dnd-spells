@@ -17,7 +17,7 @@ export const PrintSettings = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant={"ghost"}>
+        <Button variant={"secondary"}>
           <SettingsIcon size={24} /> Settings
         </Button>
       </DropdownMenuTrigger>

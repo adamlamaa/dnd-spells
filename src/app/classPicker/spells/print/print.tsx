@@ -54,15 +54,18 @@ export const Print = ({}: PrintProps) => {
       <div>
         With current selection: {spellsSorted.length} / {spells.length}
       </div>
-      <div className={"flex gap-10"}>
-        <Button onClick={clearFilters} variant={"ghost"}>
+      <div className={"flex flex-col gap-4 md:flex-row md:gap-10"}>
+        <Button onClick={clearFilters} variant={"secondary"}>
           <FunnelXIcon size={24} />
           Clear filters
         </Button>
-        <Button onClick={reactToPrintFn}>
+        <PrintSettings />
+        <Button
+          onClick={reactToPrintFn}
+          className={"h-20 w-40 md:h-auto md:w-auto"}
+        >
           <PrinterIcon size={24} /> Print spells
         </Button>
-        <PrintSettings />
       </div>
       <div
         ref={contentRef}
