@@ -2,6 +2,8 @@ import React from "react"
 import type { ClassValue } from "clsx"
 import { cn } from "@/lib/utils"
 import { Markdown } from "@/components/ui/markdown"
+import { useSpellStore } from "@/app/classPicker/spells/spells.store"
+import { useShallow } from "zustand/react/shallow"
 
 interface SpellCardLayoutCellProps {
   continued?: boolean
@@ -24,13 +26,24 @@ export const SpellCardLayoutCell = ({
   className,
   text,
 }: SpellCardLayoutCellProps) => {
+  const { settings } = useSpellStore(
+    useShallow((state) => ({
+      settings: state.settings,
+    })),
+  )
+
   const textLength = text?.length ?? 0
   const font = forceSmall && textLength > 14 ? "text-xs" : "text-base"
 
   return (
     <div
+      style={{
+        backgroundColor: settings.spellCardTextBackgroundColor,
+        borderColor: settings.spellCardTextBackgroundColor,
+        color: settings.spellCardTextColor,
+      }}
       className={cn(
-        `min-h-[15px] w-full items-center rounded-lg border-2 border-white bg-white p-1 ${font}`,
+        `min-h-[15px] w-full items-center rounded-lg border-2 p-1 ${font}`,
         center && "flex items-center justify-center",
         bold && "font-bold",
         continued && "relative",

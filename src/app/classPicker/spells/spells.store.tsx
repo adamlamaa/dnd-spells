@@ -27,6 +27,18 @@ interface Store {
   updateSubClassFilter: (values: SpellSubClass[], active: boolean) => void
   updateSpellsFilter: (values: string[], active: boolean) => void
   clearFilters: () => void
+  settings: {
+    showSpellCardLegend: boolean
+    spellCardBorderColor: string
+    spellCardTextBackgroundColor: string
+    spellCardTextColor: string
+    spellCardComponentTextColor: string
+  }
+  setShowSpellCardLegend: (show: boolean) => void
+  setSpellCardBorderColor: (color: string) => void
+  setSpellCardTextBackgroundColor: (color: string) => void
+  setSpellCardTextColor: (color: string) => void
+  setSpellCardComponentTextColor: (color: string) => void
 }
 
 const StoreContext = createContext<StoreApi<Store> | undefined>(undefined)
@@ -124,6 +136,58 @@ const SpellStoreProvider = ({
             class: new Set<SpellClass>(),
             subclasses: new Set<SpellSubClass>(),
             spells: new Set<string>(),
+          },
+        }))
+      },
+      settings: {
+        showSpellCardLegend: true,
+        spellCardBorderColor: "#1e2939",
+        spellCardTextBackgroundColor: "#ffffff",
+        spellCardTextColor: "#000000",
+        spellCardComponentTextColor: "#ffffff",
+      },
+      setShowSpellCardLegend: (show: boolean) => {
+        set((state) => ({
+          ...state,
+          settings: {
+            ...state.settings,
+            showSpellCardLegend: show,
+          },
+        }))
+      },
+      setSpellCardBorderColor: (color: string) => {
+        set((state) => ({
+          ...state,
+          settings: {
+            ...state.settings,
+            spellCardBorderColor: color,
+          },
+        }))
+      },
+      setSpellCardTextBackgroundColor: (color: string) => {
+        set((state) => ({
+          ...state,
+          settings: {
+            ...state.settings,
+            spellCardTextBackgroundColor: color,
+          },
+        }))
+      },
+      setSpellCardTextColor: (color: string) => {
+        set((state) => ({
+          ...state,
+          settings: {
+            ...state.settings,
+            spellCardTextColor: color,
+          },
+        }))
+      },
+      setSpellCardComponentTextColor: (color: string) => {
+        set((state) => ({
+          ...state,
+          settings: {
+            ...state.settings,
+            spellCardComponentTextColor: color,
           },
         }))
       },

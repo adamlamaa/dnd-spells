@@ -2,6 +2,8 @@ import type { Spell } from "@/types/spell"
 import { cn } from "@/lib/utils"
 import React from "react"
 import { SpellCardLayoutCell } from "./cell/spellCardLayoutCell"
+import { useSpellStore } from "@/app/classPicker/spells/spells.store"
+import { useShallow } from "zustand/react/shallow"
 
 type CardLayoutPropSpell = Pick<Spell, "name" | "description"> &
   Partial<Omit<Spell, "name" | "description">>
@@ -16,6 +18,12 @@ export const SpellCardLayout = ({
   text,
   index,
 }: SpellCardLayoutProps) => {
+  const { settings } = useSpellStore(
+    useShallow((state) => ({
+      settings: state.settings,
+    })),
+  )
+
   const mainCard = index === 0
   const spellName =
     !mainCard && spell.description.length > 2
@@ -24,8 +32,11 @@ export const SpellCardLayout = ({
 
   return (
     <div
+      style={{
+        backgroundColor: settings.spellCardBorderColor,
+      }}
       className={
-        "flex h-[360px] flex-col justify-between gap-2 rounded-lg border-2 border-white bg-gray-800 p-2"
+        "flex h-[360px] flex-col justify-between gap-2 rounded-lg border-2 border-white p-2"
       }
     >
       <div className={"flex h-full flex-col gap-2"}>
@@ -55,7 +66,12 @@ export const SpellCardLayout = ({
         />
       </div>
       {mainCard && spell.components && (
-        <p className={"flex justify-end text-right text-xs text-white"}>
+        <p
+          style={{
+            color: settings.spellCardComponentTextColor,
+          }}
+          className={"flex justify-end text-right text-xs"}
+        >
           {spell.components.raw}
         </p>
       )}
