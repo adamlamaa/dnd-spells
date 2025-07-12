@@ -6,7 +6,8 @@ import { useShallow } from "zustand/react/shallow"
 import type { SpellSubClass } from "@/types/spell"
 import { sortSpellsByLevel } from "@/lib/sortSpellsByLevel"
 import { Button } from "@/components/ui/button"
-import { FunnelXIcon, PrinterIcon, SettingsIcon } from "lucide-react"
+import { FunnelXIcon, PrinterIcon } from "lucide-react"
+import { PrintSettings } from "@/app/classPicker/spells/print/settings/printSettings"
 
 interface PrintProps {
   id?: string
@@ -61,9 +62,7 @@ export const Print = ({}: PrintProps) => {
         <Button onClick={reactToPrintFn}>
           <PrinterIcon size={24} /> Print spells
         </Button>
-        <Button variant={"ghost"}>
-          <SettingsIcon size={24} /> Settings
-        </Button>
+        <PrintSettings />
       </div>
       <div
         ref={contentRef}
