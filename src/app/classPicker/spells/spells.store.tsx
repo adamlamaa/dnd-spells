@@ -141,7 +141,7 @@ const SpellStoreProvider = ({
       },
       settings: {
         showSpellCardLegend: true,
-        spellCardBorderColor: "#1e2939",
+        spellCardBorderColor: "#000000",
         spellCardTextBackgroundColor: "#ffffff",
         spellCardTextColor: "#000000",
         spellCardComponentTextColor: "#ffffff",
