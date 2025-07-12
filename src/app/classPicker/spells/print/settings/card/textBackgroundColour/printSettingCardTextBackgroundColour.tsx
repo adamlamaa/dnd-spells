@@ -1,25 +1,20 @@
-import { DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import { useSpellStore } from "@/app/classPicker/spells/spells.store"
 import { useShallow } from "zustand/react/shallow"
+import { PrintSettingChangeColourProps } from "@/app/classPicker/spells/print/settings/card/shared/printSettingChangeColour"
 
 export const PrintSettingCardTextBackgroundColour = () => {
-  const { spellCardTextBackgroundColor } = useSpellStore(
+  const { colour, setColour } = useSpellStore(
     useShallow((state) => ({
-      spellCardTextBackgroundColor: state.settings.spellCardTextBackgroundColor,
+      colour: state.settings.spellCardTextBackgroundColor,
+      setColour: state.setSpellCardTextBackgroundColor,
     })),
   )
 
   return (
-    <DropdownMenuItem>
-      <div className={"flex items-center gap-2"}>
-        <div
-          style={{
-            backgroundColor: spellCardTextBackgroundColor,
-          }}
-          className={"h-6 w-6 rounded-md border-2 border-gray-300"}
-        />
-        <div>Card text background colour</div>
-      </div>
-    </DropdownMenuItem>
+    <PrintSettingChangeColourProps
+      colour={colour}
+      setColour={setColour}
+      label={"Card text background colour"}
+    />
   )
 }
