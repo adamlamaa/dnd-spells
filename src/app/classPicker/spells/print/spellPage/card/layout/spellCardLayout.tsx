@@ -78,7 +78,7 @@ const evaluateCardText = ({
 }
 
 const atHigherLevels = (description: string, higherLevel: string) => {
-  const higherLevelText = `At Higher Levels: ${higherLevel}`
+  const higherLevelText = `**At Higher Levels**: ${higherLevel}`
   if (description === "") return higherLevelText
   return `${description}\n\n${higherLevelText}`
 }
