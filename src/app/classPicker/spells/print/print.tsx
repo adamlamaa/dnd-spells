@@ -6,6 +6,7 @@ import { useShallow } from "zustand/react/shallow"
 import type { SpellSubClass } from "@/types/spell"
 import { sortSpellsByLevel } from "@/lib/sortSpellsByLevel"
 import { Button } from "@/components/ui/button"
+import { FunnelXIcon, PrinterIcon, SettingsIcon } from "lucide-react"
 
 interface PrintProps {
   id?: string
@@ -54,9 +55,15 @@ export const Print = ({}: PrintProps) => {
       </div>
       <div className={"flex gap-10"}>
         <Button onClick={clearFilters} variant={"ghost"}>
+          <FunnelXIcon size={24} />
           Clear filters
         </Button>
-        <Button onClick={reactToPrintFn}>Print spells</Button>
+        <Button onClick={reactToPrintFn}>
+          <PrinterIcon size={24} /> Print spells
+        </Button>
+        <Button variant={"ghost"}>
+          <SettingsIcon size={24} /> Settings
+        </Button>
       </div>
       <div
         ref={contentRef}
