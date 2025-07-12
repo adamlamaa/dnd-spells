@@ -48,6 +48,7 @@
   /* Table styling for print */
   table {
     width: 100%;
+    margin-bottom: 4px;
   }
   th, td {
     border: 1px solid #000000;
