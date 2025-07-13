@@ -4,6 +4,7 @@ import { SpellStoreProvider } from "@/app/classPicker/spells/spells.store"
 import { useEffect, useState } from "react"
 import { type Spell } from "@/types/spell"
 import { useAppQuery } from "@/lib/useAppQuery"
+import { BounceLoader } from "react-spinners"
 
 export const Spells = () => {
   const [classSelected, setClassSelected] = useAppQuery("class")
@@ -21,7 +22,12 @@ export const Spells = () => {
   }, [])
 
   if (spells.length === 0) {
-    return <div className={"text-gray-500"}>Loading spells...</div>
+    return (
+      <div className={"flex w-full flex-col items-center justify-center gap-4"}>
+        <BounceLoader color="var(--primary)" size={150} />
+        <div className={"text-gray-500"}>Loading spells...</div>
+      </div>
+    )
   }
 
   return (
