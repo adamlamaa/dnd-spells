@@ -1,66 +1,46 @@
-import { TiltedCard } from "@/components/ui/tiltedCard"
-import Image from "next/image"
 import { GlossyBox } from "@/components/ui/glossyBox"
+import Image from "next/image"
 
 export const Details = () => {
   return (
     <GlossyBox
       className={
-        "grid grid-cols-3 place-items-center gap-10 p-8 md:grid-cols-5 md:gap-20"
+        "grid grid-cols-1 place-items-center gap-10 p-8 md:grid-cols-3 md:gap-20"
       }
     >
-      <div
-        className={"col-span-3 items-center justify-center py-4 md:col-span-2"}
-      >
-        This website is designed to help players of DND 5e Legacy Edition easily
-        print out their spells, offering a convenient way to bring their spell
-        lists to the table for a more tactile, analogue gameplay experience. By
-        providing printable spell cards, the site aims to enhance your sessions
-        with quick reference and hands-on interaction, making it easier to
-        manage your character’s magic during your adventures.
+      <div className={"items-center justify-center py-4"}>
+        Each spell card is <strong>63mm wide × 88mm tall</strong>, which is
+        roughly <strong>2.5 inches × 3.5 inches</strong>. This is the standard
+        size for trading cards, making them easy to handle and store.
       </div>
-      {/*<div className={"col-span-3 flex items-center justify-center gap-1"}>*/}
-      <div className={"col-span-3 grid grid-cols-2 gap-1 md:grid-cols-5"}>
-        <TiltedCard startRotate={"rotate-6"} backgroundColor={"bg-violet-500"}>
+      <div className={"relative flex flex-col items-center gap-1"}>
+        {/*<div className="relative flex flex-col items-center">*/}
+        <div style={{ width: 126, height: 176, position: "relative" }}>
           <Image
             src={"/spells/Spell_Fireball.png"}
             alt={"Fireball spell card example"}
-            width={135}
-            height={170}
+            width={126}
+            height={176}
           />
-        </TiltedCard>
-        <TiltedCard startRotate={"-rotate-4"} backgroundColor={"bg-violet-700"}>
-          <Image
-            src={"/spells/Spell_DetectMagic.png"}
-            alt={"Detect magic spell card example"}
-            width={135}
-            height={170}
-          />
-        </TiltedCard>
-        <TiltedCard startRotate={"rotate-8"} backgroundColor={"bg-violet-600"}>
-          <Image
-            src={"/spells/Spell_MinorIllusion.png"}
-            alt={"Minor Illusion spell card example"}
-            width={135}
-            height={170}
-          />
-        </TiltedCard>
-        <TiltedCard startRotate={"-rotate-6"} backgroundColor={"bg-violet-500"}>
-          <Image
-            src={"/spells/Spell_MinorIllusion_2.png"}
-            alt={"Minor Illusion continued spell card example"}
-            width={135}
-            height={170}
-          />
-        </TiltedCard>
-        <TiltedCard startRotate={"rotate-12"} backgroundColor={"bg-violet-700"}>
-          <Image
-            src={"/spells/Spell_Shield.png"}
-            alt={"Shield spell card example"}
-            width={135}
-            height={170}
-          />
-        </TiltedCard>
+        </div>
+        <span
+          className="absolute -top-6 left-1/2 -translate-x-1/4 text-xs"
+          style={{ width: 126 }}
+        >
+          63mm / 2.5&#34;
+        </span>
+        <span
+          className="absolute top-1/2 left-full ml-2 -translate-y-1/4 text-xs"
+          style={{ height: 176 }}
+        >
+          88mm / 3.5&#34;
+        </span>
+      </div>
+      <div>
+        <p>
+          You can easily customize all the color settings to match your
+          preferences.
+        </p>
       </div>
     </GlossyBox>
   )
