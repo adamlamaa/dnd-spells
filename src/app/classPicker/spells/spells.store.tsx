@@ -7,6 +7,7 @@ import {
   type SpellLevel,
   type SpellSubClass,
 } from "@/types/spell"
+import { persist } from "zustand/middleware"
 
 interface Store {
   spells: Spell[]
@@ -56,142 +57,161 @@ const SpellStoreProvider = ({
 }) => {
   const spellClassInit = parseInitFilter(initFilter)
   const [store] = useState(() =>
-    createStore<Store>()((set, get) => ({
-      spells,
-      filters: {
-        level: new Set<SpellLevel>(),
-        class: spellClassInit
-          ? new Set<SpellClass>([spellClassInit])
-          : new Set<SpellClass>(),
-        subclasses: new Set<SpellSubClass>(),
-        spells: new Set<string>(),
-      },
-      getFilters: () => get().filters,
-      updateLevelFilter: (values: SpellLevel[], active: boolean) => {
-        const levelUpdated = get().filters.level
-        if (active) {
-          for (const value of values) levelUpdated.add(value)
-        } else {
-          for (const value of values) levelUpdated.delete(value)
-        }
-        updateAppQuery("custom")
-        set((state) => {
-          return {
-            ...state,
-            filters: { ...state.filters, level: levelUpdated },
-          }
-        })
-      },
-      updateClassFilter: (values: SpellClass[], active: boolean) => {
-        const classUpdated = get().filters.class
-        if (active) {
-          for (const value of values) classUpdated.add(value)
-        } else {
-          for (const value of values) classUpdated.delete(value)
-        }
-        updateAppQuery("custom")
-        set((state) => {
-          return {
-            ...state,
-            filters: { ...state.filters, class: classUpdated },
-          }
-        })
-      },
-      updateSubClassFilter: (values: SpellSubClass[], active: boolean) => {
-        const subClassUpdated = get().filters.subclasses
-        if (active) {
-          for (const value of values) subClassUpdated.add(value)
-        } else {
-          for (const value of values) subClassUpdated.delete(value)
-        }
-        updateAppQuery("custom")
-        set((state) => {
-          return {
-            ...state,
-            filters: { ...state.filters, subclasses: subClassUpdated },
-          }
-        })
-      },
-      updateSpellsFilter: (values: string[], active: boolean) => {
-        const spellsUpdated = get().filters.spells
-        if (active) {
-          for (const value of values) spellsUpdated.add(value)
-        } else {
-          for (const value of values) spellsUpdated.delete(value)
-        }
-        updateAppQuery("custom")
-        set((state) => {
-          return {
-            ...state,
-            filters: { ...state.filters, spells: spellsUpdated },
-          }
-        })
-      },
-      clearFilters: () => {
-        updateAppQuery("custom")
-        set((state) => ({
-          ...state,
+    createStore<Store>()(
+      persist(
+        (set, get) => ({
+          spells,
           filters: {
             level: new Set<SpellLevel>(),
-            class: new Set<SpellClass>(),
+            class: spellClassInit
+              ? new Set<SpellClass>([spellClassInit])
+              : new Set<SpellClass>(),
             subclasses: new Set<SpellSubClass>(),
             spells: new Set<string>(),
           },
-        }))
-      },
-      settings: {
-        showSpellCardLegend: true,
-        spellCardBorderColor: "#000000",
-        spellCardTextBackgroundColor: "#ffffff",
-        spellCardTextColor: "#000000",
-        spellCardComponentTextColor: "#ffffff",
-      },
-      setShowSpellCardLegend: (show: boolean) => {
-        set((state) => ({
-          ...state,
-          settings: {
-            ...state.settings,
-            showSpellCardLegend: show,
+          getFilters: () => get().filters,
+          updateLevelFilter: (values: SpellLevel[], active: boolean) => {
+            const levelUpdated = get().filters.level
+            if (active) {
+              for (const value of values) levelUpdated.add(value)
+            } else {
+              for (const value of values) levelUpdated.delete(value)
+            }
+            updateAppQuery("custom")
+            set((state) => {
+              return {
+                ...state,
+                filters: { ...state.filters, level: levelUpdated },
+              }
+            })
           },
-        }))
-      },
-      setSpellCardBorderColor: (color: string) => {
-        set((state) => ({
-          ...state,
-          settings: {
-            ...state.settings,
-            spellCardBorderColor: color,
+          updateClassFilter: (values: SpellClass[], active: boolean) => {
+            const classUpdated = get().filters.class
+            if (active) {
+              for (const value of values) classUpdated.add(value)
+            } else {
+              for (const value of values) classUpdated.delete(value)
+            }
+            updateAppQuery("custom")
+            set((state) => {
+              return {
+                ...state,
+                filters: { ...state.filters, class: classUpdated },
+              }
+            })
           },
-        }))
-      },
-      setSpellCardTextBackgroundColor: (color: string) => {
-        set((state) => ({
-          ...state,
-          settings: {
-            ...state.settings,
-            spellCardTextBackgroundColor: color,
+          updateSubClassFilter: (values: SpellSubClass[], active: boolean) => {
+            const subClassUpdated = get().filters.subclasses
+            if (active) {
+              for (const value of values) subClassUpdated.add(value)
+            } else {
+              for (const value of values) subClassUpdated.delete(value)
+            }
+            updateAppQuery("custom")
+            set((state) => {
+              return {
+                ...state,
+                filters: { ...state.filters, subclasses: subClassUpdated },
+              }
+            })
           },
-        }))
-      },
-      setSpellCardTextColor: (color: string) => {
-        set((state) => ({
-          ...state,
-          settings: {
-            ...state.settings,
-            spellCardTextColor: color,
+          updateSpellsFilter: (values: string[], active: boolean) => {
+            const spellsUpdated = get().filters.spells
+            if (active) {
+              for (const value of values) spellsUpdated.add(value)
+            } else {
+              for (const value of values) spellsUpdated.delete(value)
+            }
+            updateAppQuery("custom")
+            set((state) => {
+              return {
+                ...state,
+                filters: { ...state.filters, spells: spellsUpdated },
+              }
+            })
           },
-        }))
-      },
-      setSpellCardComponentTextColor: (color: string) => {
-        set((state) => ({
-          ...state,
-          settings: {
-            ...state.settings,
-            spellCardComponentTextColor: color,
+          clearFilters: () => {
+            updateAppQuery("custom")
+            set((state) => ({
+              ...state,
+              filters: {
+                level: new Set<SpellLevel>(),
+                class: new Set<SpellClass>(),
+                subclasses: new Set<SpellSubClass>(),
+                spells: new Set<string>(),
+              },
+            }))
           },
-        }))
-      },
-    })),
+          settings: {
+            showSpellCardLegend: true,
+            spellCardBorderColor: "#000000",
+            spellCardTextBackgroundColor: "#ffffff",
+            spellCardTextColor: "#000000",
+            spellCardComponentTextColor: "#ffffff",
+          },
+          setShowSpellCardLegend: (show: boolean) => {
+            set((state) => ({
+              ...state,
+              settings: {
+                ...state.settings,
+                showSpellCardLegend: show,
+              },
+            }))
+          },
+          setSpellCardBorderColor: (color: string) => {
+            set((state) => ({
+              ...state,
+              settings: {
+                ...state.settings,
+                spellCardBorderColor: color,
+              },
+            }))
+          },
+          setSpellCardTextBackgroundColor: (color: string) => {
+            set((state) => ({
+              ...state,
+              settings: {
+                ...state.settings,
+                spellCardTextBackgroundColor: color,
+              },
+            }))
+          },
+          setSpellCardTextColor: (color: string) => {
+            set((state) => ({
+              ...state,
+              settings: {
+                ...state.settings,
+                spellCardTextColor: color,
+              },
+            }))
+          },
+          setSpellCardComponentTextColor: (color: string) => {
+            set((state) => ({
+              ...state,
+              settings: {
+                ...state.settings,
+                spellCardComponentTextColor: color,
+              },
+            }))
+          },
+        }),
+        {
+          name: "dnd-spells-card-settings-storage", // unique name for localStorage key
+          partialize: (state) => ({ settings: state.settings }), // only persist settings
+          storage: {
+            getItem: (name) => {
+              const str = localStorage.getItem(name)
+              // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+              return str ? JSON.parse(str) : null
+            },
+            setItem: (name, value) => {
+              localStorage.setItem(name, JSON.stringify(value))
+            },
+            removeItem: (name) => localStorage.removeItem(name),
+          },
+        },
+      ),
+    ),
   )
 
   return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
