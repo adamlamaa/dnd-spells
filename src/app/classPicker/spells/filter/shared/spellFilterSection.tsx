@@ -38,7 +38,7 @@ export const SpellFilterSection = <T,>({
             onChange([entry.key as T], !!checked)
           }}
         />
-        {entry.label}
+        <div className={"line-clamp-1"}>{entry.label}</div>
         {info && (
           <Info
             size={15}
