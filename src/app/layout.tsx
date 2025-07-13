@@ -3,7 +3,7 @@ import "../styles/globals.css"
 import { type Metadata } from "next"
 import { Geist } from "next/font/google"
 import { GlossyBox } from "@/components/ui/glossyBox"
-import { GithubIcon, StampIcon } from "lucide-react"
+import { BugIcon, GithubIcon, StampIcon } from "lucide-react"
 import { LinkButtonWithTooltip } from "@/components/ui/linkButtonWithTooltip"
 import type { ReactNode } from "react"
 import { Analytics } from "@vercel/analytics/next"
@@ -37,6 +37,13 @@ export default function RootLayout({
                 href={"https://github.com/adamlamaa/dnd-spells"}
                 tooltipContent={"Open Source Repo"}
                 icon={<GithubIcon />}
+              />
+              <LinkButtonWithTooltip
+                href={
+                  "https://github.com/adamlamaa/dnd-spells/issues/new/choose"
+                }
+                tooltipContent={"Submit an Issue"}
+                icon={<BugIcon />}
               />
               <LinkButtonWithTooltip
                 href={"https://opengamingfoundation.org/ogl.html"}
