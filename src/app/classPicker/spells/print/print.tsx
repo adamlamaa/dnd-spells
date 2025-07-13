@@ -54,7 +54,7 @@ export const Print = ({}: PrintProps) => {
       <div>
         With current selection: {spellsSorted.length} / {spells.length}
       </div>
-      <div className={"flex flex-col gap-4 md:flex-row md:gap-10"}>
+      <div className={"flex flex-col-reverse gap-4 md:flex-row md:gap-10"}>
         <Button onClick={clearFilters} variant={"secondary"}>
           <FunnelXIcon size={24} />
           Clear filters
