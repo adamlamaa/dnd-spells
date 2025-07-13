@@ -13,7 +13,7 @@ export const SpellFilterLevel = () => {
 
   return (
     <SpellFilterSection
-      title={"Print These Levels"}
+      title={"Print these levels"}
       entries={SpellLevels.map((level) => ({
         key: level,
         label: level === "cantrip" ? "Cantrip" : `Level ${level}`,
