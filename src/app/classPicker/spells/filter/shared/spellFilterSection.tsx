@@ -51,7 +51,7 @@ export const SpellFilterSection = <T,>({
   }
 
   return (
-    <GlossyBox className={"flex min-h-[440px] flex-col gap-4 p-4"}>
+    <GlossyBox className={"flex flex-col gap-4 p-4 md:min-h-[440px]"}>
       <h2>{title}</h2>
       {!!search && <Input onChange={(event) => search(event.target.value)} />}
       <div className={"max-h-[300px] overflow-y-auto"}>
@@ -71,7 +71,7 @@ export const SpellFilterSection = <T,>({
             <FixedSizeList
               itemSize={24}
               itemCount={entries.length}
-              height={276}
+              height={Math.min(276, entries.length * 24)}
               width={"100%"}
             >
               {Row}
