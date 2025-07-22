@@ -39,7 +39,7 @@ export const Details = () => {
       <div>
         <p>
           You can easily customize all the color settings to match your
-          preferences.
+          preferences under settings.
         </p>
       </div>
     </GlossyBox>

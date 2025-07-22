@@ -7,6 +7,7 @@ import { BugIcon, GithubIcon, LaughIcon, StampIcon } from "lucide-react"
 import { LinkButtonWithTooltip } from "@/components/ui/linkButtonWithTooltip"
 import type { ReactNode } from "react"
 import { Analytics } from "@vercel/analytics/next"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "DND Spells",
@@ -33,6 +34,19 @@ export default function RootLayout({
           <div className={"flex-1"}>{children}</div>
           <footer>
             <GlossyBox className="flex items-center justify-center gap-4 p-4">
+              <LinkButtonWithTooltip
+                href={"https://coff.ee/akvila"}
+                tooltipContent={"Buy me a coffee"}
+                icon={
+                  <Image
+                    src="/bmc-logo-white.svg"
+                    alt="Buy Me a Coffee"
+                    width={20}
+                    height={20}
+                    className="h-5 w-5"
+                  />
+                }
+              />
               <LinkButtonWithTooltip
                 href={"https://github.com/adamlamaa/dnd-spells"}
                 tooltipContent={"Open Source Repo"}
