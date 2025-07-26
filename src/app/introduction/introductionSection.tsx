@@ -9,7 +9,6 @@ const DETAILS_TAB = "details"
 const SUPPORT_TAB = "support"
 
 export const IntroductionSection = () => {
-  console.log("test2")
   return (
     <>
       <Tabs
