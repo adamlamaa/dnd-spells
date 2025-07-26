@@ -5,7 +5,7 @@ import { Support } from "@/app/introduction/support/support"
 
 const ABOUT_TAB = "about"
 const DETAILS_TAB = "details"
-const ACCESSORIES_TAB = "accessories"
+// const ACCESSORIES_TAB = "accessories"
 const SUPPORT_TAB = "support"
 
 export const IntroductionSection = () => {
