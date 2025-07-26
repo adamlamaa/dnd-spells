@@ -8,6 +8,8 @@ npm run install
 npm run dev
 ```
 
+You can then access the site at `http://localhost:3001`.
+
 # Contributing
 
 Contribute to this open source website.

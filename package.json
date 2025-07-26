@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "PORT=3001 next dev --turbo",
     "check": "concurrently 'npm:check:*'",
     "check:lint": "next lint",
     "check:type": "tsc --noEmit",
