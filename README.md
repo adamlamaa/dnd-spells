@@ -1,6 +1,13 @@
 # dnd-spells
 This repo is designed to help players of DND 5e Legacy Edition easily print out their spells, offering a convenient way to bring their spell lists to the table for a more tactile, analogue gameplay experience. By providing printable spell cards, the site aims to enhance your sessions with quick reference and hands-on interaction, making it easier to manage your character’s magic during your adventures.
 
+# Getting Started
+To run this project locally, follow these steps:
+```
+npm run install
+npm run dev
+```
+
 # Contributing
 
 Contribute to this open source website.
