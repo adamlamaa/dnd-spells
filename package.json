@@ -4,16 +4,17 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "build": "next build",
-    "check": "next lint && tsc --noEmit",
     "dev": "next dev --turbo",
-    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
-    "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "preview": "next build && next start",
+    "check": "concurrently 'npm:check:*'",
+    "check:lint": "next lint",
+    "check:type": "tsc --noEmit",
+    "check:prettier": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "fix": "concurrently 'npm:fix:*'",
+    "fix:prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "fix:lint": "next lint --fix",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "build": "next build",
+    "preview": "next build && next start"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "1.3.1",
@@ -43,6 +44,8 @@
     "zustand": "5.0.5"
   },
   "devDependencies": {
+    "concurrently": "9.2.0",
+    "husky": "9.1.7",
     "@eslint/eslintrc": "3.3.1",
     "@tailwindcss/postcss": "4.0.15",
     "@types/node": "20.14.10",
