@@ -53,7 +53,8 @@
     "school": "evocation",
     "tags": [
       "wizard",
-      "level2"
+      "level2",
+      "druid_swamp"
     ],
     "type": "2th-level evocation",
     "description": [
@@ -207,7 +208,8 @@
       "bard",
       "druid",
       "ranger",
-      "level1"
+      "level1",
+      "cleric_nature"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -457,7 +459,8 @@
     "school": "divination",
     "tags": [
       "wizard",
-      "level4"
+      "level4",
+      "cleric_knowledge"
     ],
     "type": "4th-level divination",
     "description": [
@@ -674,7 +677,8 @@
     "school": "divination",
     "tags": [
       "cleric",
-      "level2"
+      "level2",
+      "cleric_knowledge"
     ],
     "type": "2nd-level divination (ritual)",
     "description": [
@@ -818,7 +822,7 @@
       "bard",
       "cleric",
       "level1",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -883,7 +887,7 @@
       "warlock",
       "wizard",
       "level4",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance"
     ],
     "type": "4th-level abjuration",
     "description": [
@@ -915,7 +919,9 @@
     "tags": [
       "druid",
       "ranger",
-      "level2"
+      "level2",
+      "cleric_nature",
+      "druid_forest"
     ],
     "type": "2nd-level transmutation",
     "description": [
@@ -941,7 +947,9 @@
     "school": "abjuration",
     "tags": [
       "cleric",
-      "level3"
+      "level3",
+      "cleric_life",
+      "paladin_devotion"
     ],
     "type": "3rd-level abjuration",
     "description": [
@@ -1061,7 +1069,8 @@
     "school": "conjuration",
     "tags": [
       "wizard",
-      "level4"
+      "level4",
+      "warlock_great_old_one"
     ],
     "type": "4th-level conjuration",
     "description": [
@@ -1151,7 +1160,8 @@
     "tags": [
       "cleric",
       "paladin",
-      "level1"
+      "level1",
+      "cleric_life"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -1184,7 +1194,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level4"
+      "level4",
+      "druid_desert"
     ],
     "type": "4th-level necromancy",
     "description": [
@@ -1244,7 +1255,8 @@
       "cleric",
       "sorcerer",
       "wizard",
-      "level2"
+      "level2",
+      "warlock_fiend"
     ],
     "type": "2nd-level Necromancy",
     "description": [
@@ -1272,7 +1284,9 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "cleric_trickery",
+      "warlock_archfey"
     ],
     "type": "3rd-level transmutation",
     "description": [
@@ -1301,7 +1315,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level2"
+      "level2",
+      "druid_desert"
     ],
     "type": "2nd-Level illusion",
     "description": [
@@ -1385,7 +1400,9 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level1"
+      "level1",
+      "cleric_light",
+      "warlock_fiend"
     ],
     "type": "1st-level evocation",
     "description": [
@@ -1412,7 +1429,9 @@
     "school": "conjuration",
     "tags": [
       "druid",
-      "level3"
+      "level3",
+      "cleric_tempest",
+      "druid_forest"
     ],
     "type": "3rd-level conjuration",
     "description": [
@@ -1441,7 +1460,8 @@
     "tags": [
       "bard",
       "cleric",
-      "level2"
+      "level2",
+      "warlock_archfey"
     ],
     "type": "2nd-level Enchantment",
     "description": [
@@ -1538,7 +1558,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level1"
+      "level1",
+      "cleric_trickery"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -1695,7 +1716,8 @@
       "cleric",
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "warlock_great_old_one"
     ],
     "type": "3rd-level divination",
     "description": [
@@ -1790,7 +1812,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level5"
+      "level5",
+      "druid_underdark"
     ],
     "type": "5th-level conjuration",
     "description": [
@@ -1853,7 +1876,9 @@
     "tags": [
       "cleric",
       "paladin",
-      "level1"
+      "level1",
+      "cleric_knowledge",
+      "warlock_fiend"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -1883,7 +1908,8 @@
     "school": "divination",
     "tags": [
       "cleric",
-      "level5"
+      "level5",
+      "paladin_devotion"
     ],
     "type": "5th-level divination (ritual)",
     "description": [
@@ -1912,7 +1938,10 @@
     "tags": [
       "druid",
       "ranger",
-      "level5"
+      "level5",
+      "druid_arctic",
+      "druid_forest",
+      "paladin_ancients"
     ],
     "type": "5th-level divination (ritual)",
     "description": [
@@ -2032,7 +2061,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level5"
+      "level5",
+      "druid_arctic"
     ],
     "type": "5th-level evocation",
     "description": [
@@ -2068,7 +2098,8 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level4"
+      "level4",
+      "cleric_knowledge"
     ],
     "type": "4th-level enchantment",
     "description": [
@@ -2188,7 +2219,8 @@
     "tags": [
       "druid",
       "wizard",
-      "level5"
+      "level5",
+      "druid_coast"
     ],
     "type": "5th-level conjuration",
     "description": [
@@ -2494,7 +2526,9 @@
       "cleric",
       "druid",
       "wizard",
-      "level4"
+      "level4",
+      "cleric_tempest",
+      "druid_coast"
     ],
     "type": "4th-level transmutation",
     "description": [
@@ -2684,7 +2718,8 @@
     "tags": [
       "cleric",
       "paladin",
-      "level3"
+      "level3",
+      "druid_desert"
     ],
     "type": "3rd-level conjuration",
     "description": [
@@ -2842,7 +2877,8 @@
     "school": "evocation",
     "tags": [
       "paladin",
-      "level3"
+      "level3",
+      "cleric_war"
     ],
     "type": "3rd-level evocation",
     "description": [
@@ -2877,7 +2913,8 @@
       "druid",
       "paladin",
       "ranger",
-      "level1"
+      "level1",
+      "cleric_life"
     ],
     "type": "1st-level evocation",
     "description": [
@@ -2943,7 +2980,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level2"
+      "level2",
+      "druid_swamp"
     ],
     "type": "2nd-Level evocation",
     "description": [
@@ -3012,7 +3050,9 @@
       "paladin",
       "ranger",
       "sorcerer",
-      "level3"
+      "level3",
+      "cleric_light",
+      "druid_grassland"
     ],
     "type": "3rd-level evocation",
     "description": [
@@ -3040,7 +3080,8 @@
     "tags": [
       "cleric",
       "paladin",
-      "level4"
+      "level4",
+      "cleric_life"
     ],
     "type": "4th-level abjuration",
     "description": [
@@ -3127,7 +3168,8 @@
     "school": "evocation",
     "tags": [
       "paladin",
-      "level5"
+      "level5",
+      "cleric_tempest"
     ],
     "type": "5th-level evocation",
     "description": [
@@ -3261,7 +3303,8 @@
       "bard",
       "sorcerer",
       "wizard",
-      "level2"
+      "level2",
+      "warlock_great_old_one"
     ],
     "type": "2nd-Level divination",
     "description": [
@@ -3295,7 +3338,8 @@
       "warlock",
       "wizard",
       "level4",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "cleric_trickery"
     ],
     "type": "4th-level conjuration",
     "description": [
@@ -3432,7 +3476,9 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level3"
+      "level3",
+      "cleric_trickery",
+      "paladin_devotion"
     ],
     "type": "3rd-level abjuration",
     "description": [
@@ -3459,7 +3505,8 @@
     "school": "enchantment",
     "tags": [
       "bard",
-      "level1"
+      "level1",
+      "warlock_great_old_one"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -3514,7 +3561,8 @@
     "school": "evocation",
     "tags": [
       "paladin",
-      "level1"
+      "level1",
+      "cleric_war"
     ],
     "type": "1st-level evocation",
     "description": [
@@ -3570,7 +3618,10 @@
     "tags": [
       "druid",
       "sorcerer",
-      "level4"
+      "level4",
+      "cleric_nature",
+      "warlock_archfey",
+      "warlock_great_old_one"
     ],
     "type": "4th-level enchantment",
     "description": [
@@ -3636,7 +3687,10 @@
       "bard",
       "sorcerer",
       "wizard",
-      "level5"
+      "level5",
+      "cleric_trickery",
+      "warlock_archfey",
+      "warlock_great_old_one"
     ],
     "type": "5th-level enchantment",
     "description": [
@@ -3670,7 +3724,8 @@
       "bard",
       "warlock",
       "wizard",
-      "level5"
+      "level5",
+      "druid_grassland"
     ],
     "type": "5th-level illusion",
     "description": [
@@ -4012,7 +4067,8 @@
     "school": "conjuration",
     "tags": [
       "ranger",
-      "level1"
+      "level1",
+      "paladin_ancients"
     ],
     "type": "1st-level conjuration",
     "description": [
@@ -4255,7 +4311,9 @@
     "tags": [
       "bard",
       "druid",
-      "level1"
+      "level1",
+      "cleric_light",
+      "warlock_archfey"
     ],
     "type": "1st-level evocation",
     "description": [
@@ -4662,7 +4720,8 @@
     "school": "evocation",
     "tags": [
       "wizard",
-      "level4"
+      "level4",
+      "warlock_fiend"
     ],
     "type": "4th-level evocation",
     "description": [
@@ -4724,7 +4783,9 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "cleric_light",
+      "warlock_fiend"
     ],
     "type": "3rd-level evocation",
     "description": [
@@ -4817,7 +4878,11 @@
     "school": "evocation",
     "tags": [
       "cleric",
-      "level5"
+      "level5",
+      "cleric_light",
+      "cleric_war",
+      "paladin_devotion",
+      "warlock_fiend"
     ],
     "type": "5th-level evocation",
     "description": [
@@ -4849,7 +4914,8 @@
     "tags": [
       "druid",
       "wizard",
-      "level2"
+      "level2",
+      "cleric_light"
     ],
     "type": "2nd-level conjuration",
     "description": [
@@ -4975,7 +5041,8 @@
       "ranger",
       "sorcerer",
       "wizard",
-      "level1"
+      "level1",
+      "cleric_tempest"
     ],
     "type": "1st-level conjuration",
     "description": [
@@ -5109,7 +5176,14 @@
       "cleric",
       "druid",
       "ranger",
-      "level4"
+      "level4",
+      "cleric_war",
+      "druid_arctic",
+      "druid_coast",
+      "druid_forest",
+      "druid_grassland",
+      "druid_swamp",
+      "paladin_devotion"
     ],
     "type": "4th-level abjuration",
     "description": [
@@ -5242,7 +5316,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level3"
+      "level3",
+      "druid_underdark"
     ],
     "type": "3rd-level transmutation",
     "description": [
@@ -5527,7 +5602,8 @@
     "tags": [
       "ranger",
       "druid",
-      "level4"
+      "level4",
+      "cleric_nature"
     ],
     "type": "4th-level conjuration",
     "description": [
@@ -5586,7 +5662,9 @@
       "sorcerer",
       "wizard",
       "bard",
-      "level4"
+      "level4",
+      "druid_underdark",
+      "warlock_archfey"
     ],
     "type": "4th-level illusion",
     "description": [
@@ -5645,7 +5723,10 @@
     "school": "conjuration",
     "tags": [
       "cleric",
-      "level4"
+      "level4",
+      "cleric_life",
+      "cleric_light",
+      "paladin_devotion"
     ],
     "type": "4th-level conjuration",
     "description": [
@@ -5796,7 +5877,8 @@
       "sorcerer",
       "wizard",
       "druid",
-      "level2"
+      "level2",
+      "cleric_tempest"
     ],
     "type": "2nd-level evocation",
     "description": [
@@ -5853,7 +5935,8 @@
     "school": "evocation",
     "tags": [
       "cleric",
-      "level5"
+      "level5",
+      "warlock_fiend"
     ],
     "type": "5th-level evocation",
     "description": [
@@ -5891,7 +5974,8 @@
       "druid",
       "warlock",
       "wizard",
-      "level4"
+      "level4",
+      "druid_desert"
     ],
     "type": "4th-level illusion",
     "description": [
@@ -5950,7 +6034,8 @@
       "sorcerer",
       "wizard",
       "level3",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "druid_grassland"
     ],
     "type": "3rd-level transmutation",
     "description": [
@@ -6188,7 +6273,8 @@
     "tags": [
       "wizard",
       "level1",
-      "bard"
+      "bard",
+      "warlock_great_old_one"
     ],
     "type": "1st-level divination",
     "description": [
@@ -6225,7 +6311,8 @@
       "warlock",
       "wizard",
       "level5",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "cleric_war"
     ],
     "type": "5th-level enchantment",
     "description": [
@@ -6266,7 +6353,8 @@
       "warlock",
       "wizard",
       "level2",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "druid_arctic"
     ],
     "type": "2nd-level enchantment (ritual)",
     "description": [
@@ -6323,7 +6411,8 @@
     "tags": [
       "ranger",
       "level1",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "druid_grassland"
     ],
     "type": "1st-level divination",
     "description": [
@@ -6426,7 +6515,10 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level4"
+      "level4",
+      "cleric_tempest",
+      "druid_arctic",
+      "paladin_ancients"
     ],
     "type": "4th-level evocation",
     "description": [
@@ -6457,7 +6549,8 @@
     "tags": [
       "bard",
       "wizard",
-      "level1"
+      "level1",
+      "cleric_knowledge"
     ],
     "type": "1st-level divination (Ritual)",
     "description": [
@@ -6641,7 +6734,13 @@
       "cleric",
       "druid",
       "sorcerer",
-      "level5"
+      "level5",
+      "cleric_nature",
+      "cleric_tempest",
+      "druid_desert",
+      "druid_grassland",
+      "druid_swamp",
+      "druid_underdark"
     ],
     "type": "5th-level conjuration",
     "description": [
@@ -6835,7 +6934,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level2"
+      "level2",
+      "druid_grassland"
     ],
     "type": "2nd-level illusion",
     "description": [
@@ -6961,7 +7061,8 @@
       "cleric",
       "wizard",
       "bard",
-      "level5"
+      "level5",
+      "cleric_knowledge"
     ],
     "type": "5th-level divination",
     "description": [
@@ -6996,7 +7097,9 @@
       "druid",
       "paladin",
       "ranger",
-      "level2"
+      "level2",
+      "cleric_life",
+      "paladin_devotion"
     ],
     "type": "2nd-level abjuration",
     "description": [
@@ -7123,7 +7226,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "druid_mountain"
     ],
     "type": "3rd-level evocation",
     "description": [
@@ -7195,7 +7299,8 @@
       "paladin",
       "ranger",
       "wizard",
-      "level4"
+      "level4",
+      "druid_swamp"
     ],
     "type": "4th-level divination",
     "description": [
@@ -7548,7 +7653,8 @@
     "tags": [
       "paladin",
       "wizard",
-      "level2"
+      "level2",
+      "cleric_war"
     ],
     "type": "2nd-level transmutation",
     "description": [
@@ -7648,7 +7754,8 @@
       "bard",
       "cleric",
       "druid",
-      "level5"
+      "level5",
+      "cleric_life"
     ],
     "type": "5th-level conjuration",
     "description": [
@@ -7792,7 +7899,8 @@
     "tags": [
       "cleric",
       "druid",
-      "level3"
+      "level3",
+      "druid_mountain"
     ],
     "type": "3rd-level transmutation (ritual)",
     "description": [
@@ -8016,7 +8124,9 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level2"
+      "level2",
+      "cleric_trickery",
+      "druid_coast"
     ],
     "type": "2nd-level illusion",
     "description": [
@@ -8076,7 +8186,9 @@
       "warlock",
       "wizard",
       "level2",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "druid_coast",
+      "paladin_ancients"
     ],
     "type": "2nd-level conjuration",
     "description": [
@@ -8105,7 +8217,8 @@
     "tags": [
       "bard",
       "wizard",
-      "level5"
+      "level5",
+      "cleric_trickery"
     ],
     "type": "5th-level enchantment",
     "description": [
@@ -8168,7 +8281,8 @@
     "school": "evocation",
     "tags": [
       "druid",
-      "level2"
+      "level2",
+      "paladin_ancients"
     ],
     "type": "2nd-level evocation",
     "description": [
@@ -8236,7 +8350,8 @@
       "bard",
       "ranger",
       "wizard",
-      "level3"
+      "level3",
+      "cleric_knowledge"
     ],
     "type": "3rd-level abjuration",
     "description": [
@@ -8267,7 +8382,9 @@
     "tags": [
       "druid",
       "ranger",
-      "level2"
+      "level2",
+      "cleric_trickery",
+      "druid_grassland"
     ],
     "type": "2nd-level abjuration",
     "description": [
@@ -8296,7 +8413,8 @@
     "school": "transmutation",
     "tags": [
       "wizard",
-      "level5"
+      "level5",
+      "druid_mountain"
     ],
     "type": "5th-level transmutation",
     "description": [
@@ -8329,7 +8447,9 @@
       "bard",
       "sorcerer",
       "wizard",
-      "level2"
+      "level2",
+      "warlock_archfey",
+      "warlock_great_old_one"
     ],
     "type": "2nd-level illusion",
     "description": [
@@ -8517,7 +8637,11 @@
       "bard",
       "druid",
       "ranger",
-      "level3"
+      "level3",
+      "cleric_nature",
+      "druid_forest",
+      "paladin_ancients",
+      "warlock_archfey"
     ],
     "type": "3rd-level transmutation",
     "description": [
@@ -8585,7 +8709,8 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level4"
+      "level4",
+      "cleric_trickery"
     ],
     "type": "4th-level transmutation",
     "description": [
@@ -8978,7 +9103,9 @@
       "sorcerer",
       "wizard",
       "level3",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "druid_desert",
+      "paladin_ancients"
     ],
     "type": "3rd-level abjuration",
     "description": [
@@ -9013,7 +9140,8 @@
       "paladin",
       "warlock",
       "wizard",
-      "level1"
+      "level1",
+      "paladin_devotion"
     ],
     "type": "1st-level abjuration",
     "description": [
@@ -9138,7 +9266,8 @@
       "cleric",
       "paladin",
       "bard",
-      "level5"
+      "level5",
+      "cleric_life"
     ],
     "type": "5th-level necromancy",
     "description": [
@@ -9477,7 +9606,8 @@
     "tags": [
       "cleric",
       "paladin",
-      "level3"
+      "level3",
+      "cleric_life"
     ],
     "type": "3rd-level conjuration",
     "description": [
@@ -9562,7 +9692,8 @@
     "school": "abjuration",
     "tags": [
       "cleric",
-      "level1"
+      "level1",
+      "paladin_devotion"
     ],
     "type": "1st-level abjuration",
     "description": [
@@ -9591,7 +9722,9 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level2"
+      "level2",
+      "cleric_light",
+      "warlock_fiend"
     ],
     "type": "2nd-level evocation",
     "description": [
@@ -9629,7 +9762,12 @@
       "warlock",
       "wizard",
       "level5",
-      "paladin_oath_of_vengeance"
+      "paladin_vengeance",
+      "cleric_knowledge",
+      "cleric_light",
+      "druid_coast",
+      "druid_forest",
+      "druid_swamp"
     ],
     "type": "5th-level divination",
     "description": [
@@ -9750,7 +9888,8 @@
       "bard",
       "sorcerer",
       "wizard",
-      "level5"
+      "level5",
+      "warlock_archfey"
     ],
     "type": "5th-level illusion",
     "description": [
@@ -9784,7 +9923,8 @@
       "bard",
       "cleric",
       "wizard",
-      "level3"
+      "level3",
+      "warlock_great_old_one"
     ],
     "type": "3rd-level evocation",
     "description": [
@@ -9912,7 +10052,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level2"
+      "level2",
+      "cleric_tempest"
     ],
     "type": "2nd-level evocation",
     "description": [
@@ -9971,7 +10112,8 @@
     "tags": [
       "cleric",
       "paladin",
-      "level1"
+      "level1",
+      "cleric_war"
     ],
     "type": "1st-level abjuration",
     "description": [
@@ -10058,7 +10200,8 @@
       "bard",
       "cleric",
       "ranger",
-      "level2"
+      "level2",
+      "druid_desert"
     ],
     "type": "2nd-level illusion (ritual)",
     "description": [
@@ -10186,7 +10329,8 @@
       "bard",
       "sorcerer",
       "wizard",
-      "level1"
+      "level1",
+      "warlock_archfey"
     ],
     "type": "1st-level enchantment",
     "description": [
@@ -10220,7 +10364,9 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "cleric_tempest",
+      "druid_arctic"
     ],
     "type": "3rd-level conjuration",
     "description": [
@@ -10251,7 +10397,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "druid_arctic"
     ],
     "type": "3rd-level transmutation",
     "description": [
@@ -10308,7 +10455,9 @@
       "bard",
       "druid",
       "ranger",
-      "level1"
+      "level1",
+      "cleric_nature",
+      "paladin_ancients"
     ],
     "type": "1st-level divination (ritual)",
     "description": [
@@ -10339,7 +10488,8 @@
     "tags": [
       "bard",
       "cleric",
-      "level3"
+      "level3",
+      "cleric_knowledge"
     ],
     "type": "3rd-level necromancy",
     "description": [
@@ -10404,7 +10554,10 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level2"
+      "level2",
+      "druid_forest",
+      "druid_mountain",
+      "druid_underdark"
     ],
     "type": "2nd-level transmutation",
     "description": [
@@ -10435,7 +10588,10 @@
     "tags": [
       "druid",
       "ranger",
-      "level2"
+      "level2",
+      "cleric_nature",
+      "druid_arctic",
+      "druid_mountain"
     ],
     "type": "2nd-level transmutation",
     "description": [
@@ -10465,7 +10621,8 @@
     "school": "conjuration",
     "tags": [
       "cleric",
-      "level3"
+      "level3",
+      "cleric_war"
     ],
     "type": "3rd-level conjuration",
     "description": [
@@ -10493,7 +10650,9 @@
     "school": "evocation",
     "tags": [
       "cleric",
-      "level2"
+      "level2",
+      "cleric_life",
+      "cleric_war"
     ],
     "type": "2nd-level evocation",
     "description": [
@@ -10553,7 +10712,10 @@
       "bard",
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "druid_swamp",
+      "druid_underdark",
+      "warlock_fiend"
     ],
     "type": "3rd-level conjuration",
     "description": [
@@ -10586,7 +10748,9 @@
       "cleric",
       "druid",
       "wizard",
-      "level4"
+      "level4",
+      "druid_mountain",
+      "druid_underdark"
     ],
     "type": "4th-level transmutation",
     "description": [
@@ -10621,7 +10785,10 @@
       "sorcerer",
       "ranger",
       "wizard",
-      "level4"
+      "level4",
+      "cleric_war",
+      "druid_mountain",
+      "paladin_ancients"
     ],
     "type": "4th-level abjuration",
     "description": [
@@ -10713,7 +10880,8 @@
       "sorcerer",
       "warlock",
       "wizard",
-      "level2"
+      "level2",
+      "cleric_knowledge"
     ],
     "type": "2nd-level enchantment",
     "description": [
@@ -10874,7 +11042,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level5"
+      "level5",
+      "warlock_great_old_one"
     ],
     "type": "5th-level transmutation",
     "description": [
@@ -11149,7 +11318,8 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level1"
+      "level1",
+      "cleric_tempest"
     ],
     "type": "1st-level evocation",
     "description": [
@@ -11363,7 +11533,10 @@
     "tags": [
       "druid",
       "ranger",
-      "level5"
+      "level5",
+      "cleric_nature",
+      "druid_forest",
+      "paladin_ancients"
     ],
     "type": "5th-level conjuration",
     "description": [
@@ -11680,7 +11853,9 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level4"
+      "level4",
+      "cleric_light",
+      "warlock_fiend"
     ],
     "type": "4th-level evocation",
     "description": [
@@ -11804,7 +11979,9 @@
       "druid",
       "sorcerer",
       "wizard",
-      "level5"
+      "level5",
+      "druid_desert",
+      "druid_mountain"
     ],
     "type": "5th-level evocation",
     "description": [
@@ -11965,7 +12142,8 @@
       "ranger",
       "sorcerer",
       "wizard",
-      "level3"
+      "level3",
+      "druid_coast"
     ],
     "type": "3rd-level transmutation (ritual)",
     "description": [
@@ -12000,7 +12178,9 @@
       "druid",
       "ranger",
       "sorcerer",
-      "level2"
+      "level2",
+      "druid_coast",
+      "druid_swamp"
     ],
     "type": "3rd-level transmutation (ritual)",
     "description": [
@@ -12065,7 +12245,8 @@
     "tags": [
       "sorcerer",
       "wizard",
-      "level2"
+      "level2",
+      "druid_underdark"
     ],
     "type": "2nd-level conjuration",
     "description": [
@@ -12184,7 +12365,8 @@
     "tags": [
       "druid",
       "ranger",
-      "level3"
+      "level3",
+      "cleric_nature"
     ],
     "type": "3rd-level evocation",
     "description": [
@@ -12332,7 +12514,8 @@
       "bard",
       "cleric",
       "paladin",
-      "level2"
+      "level2",
+      "paladin_devotion"
     ],
     "type": "2nd-level enchantment",
     "description": [
