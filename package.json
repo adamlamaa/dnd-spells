@@ -14,7 +14,8 @@
     "fix:lint": "next lint --fix",
     "start": "next start",
     "build": "next build",
-    "preview": "next build && next start"
+    "preview": "next build && next start",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "1.3.1",
