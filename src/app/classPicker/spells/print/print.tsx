@@ -20,10 +20,11 @@ export const Print = ({}: PrintProps) => {
     documentTitle: "DND Spells",
   })
 
-  const { spells, filters, clearFilters } = useSpellStore(
+  const { spells, filters, settings, clearFilters } = useSpellStore(
     useShallow((state) => ({
       spells: state.spells,
       filters: state.filters,
+      settings: state.settings,
       clearFilters: state.clearFilters,
     })),
   )
@@ -49,6 +50,21 @@ export const Print = ({}: PrintProps) => {
 
   const spellsSorted = sortSpellsByLevel(spellsInScope)
 
+  const track = () => {
+    void fetch("/api/track", {
+      body: JSON.stringify({
+        filters: {
+          class: Array.from(filters.class.values()),
+          subclasses: Array.from(filters.subclasses.values()),
+          spells: Array.from(filters.spells.values()),
+          level: Array.from(filters.level.values()),
+        },
+        settings,
+      }),
+      method: "POST",
+    })
+  }
+
   return (
     <>
       <div>
@@ -61,7 +77,10 @@ export const Print = ({}: PrintProps) => {
         </Button>
         <PrintSettings />
         <Button
-          onClick={reactToPrintFn}
+          onClick={() => {
+            track()
+            reactToPrintFn()
+          }}
           className={"h-20 w-40 md:h-auto md:w-auto"}
         >
           <PrinterIcon size={24} /> Print spells
