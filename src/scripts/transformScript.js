@@ -31,13 +31,30 @@ fs.readFile(spellsFilePath, "utf8", (err, data) => {
     // })
 
     // sort by name
-    const updatedSpells = spells.sort((a, b) => {
-      {
-        if (a.name < b.name) return -1
-        if (a.name > b.name) return 1
-        return 0
-      }
-    })
+    // const updatedSpells = spells.sort((a, b) => {
+    //   {
+    //     if (a.name < b.name) return -1
+    //     if (a.name > b.name) return 1
+    //     return 0
+    //   }
+    // })
+
+    // sort fields
+    const updatedSpells = spells.map((spell) => ({
+      name: spell.name,
+      level: spell.level,
+      type: spell.type,
+      casting_time: spell.casting_time,
+      range: spell.range,
+      components: spell.components,
+      duration: spell.duration,
+      description: spell.description,
+      higher_levels: spell.higher_levels,
+      ritual: spell.ritual,
+      school: spell.school,
+      classes: spell.classes,
+      tags: spell.tags,
+    }))
 
     // Write the updated data to spellnew.json
     fs.writeFile(
