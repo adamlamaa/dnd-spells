@@ -31,6 +31,63 @@
     ]
   },
   {
+    "casting_time": "Action",
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "components": {
+      "material": false,
+      "raw": "V",
+      "somatic": false,
+      "verbal": true
+    },
+    "duration": "1 round",
+    "higher_levels": "This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "level": "cantrip",
+    "name": "Mind Sliver",
+    "range": "60 feet",
+    "ritual": false,
+    "school": "",
+    "tags": [
+      "cantrip"
+    ],
+    "type": "Evocation cantrip",
+    "description": [
+      "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn."
+    ]
+  },
+  {
+    "casting_time": "Action",
+    "classes": [
+      "warlock"
+    ],
+    "components": {
+      "material": true,
+      "materials_needed": [
+        "a cup of water"
+      ],
+      "raw": "V, S, M (a cup of water)",
+      "somatic": true,
+      "verbal": true
+    },
+    "duration": "1 hour",
+    "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot.",
+    "level": "1",
+    "name": "Armor of Agathys",
+    "range": "Self",
+    "ritual": false,
+    "school": "abjuration",
+    "tags": [
+      "level1"
+    ],
+    "type": "1st-level abjuration",
+    "description": [
+      "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage."
+    ]
+  },
+  {
     "casting_time": "1 minute",
     "classes": [
       "wizard"
