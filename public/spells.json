@@ -31,63 +31,6 @@
     ]
   },
   {
-    "casting_time": "Action",
-    "classes": [
-      "sorcerer",
-      "warlock",
-      "wizard"
-    ],
-    "components": {
-      "material": false,
-      "raw": "V",
-      "somatic": false,
-      "verbal": true
-    },
-    "duration": "1 round",
-    "higher_levels": "This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-    "level": "cantrip",
-    "name": "Mind Sliver",
-    "range": "60 feet",
-    "ritual": false,
-    "school": "",
-    "tags": [
-      "cantrip"
-    ],
-    "type": "Evocation cantrip",
-    "description": [
-      "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn."
-    ]
-  },
-  {
-    "casting_time": "Action",
-    "classes": [
-      "warlock"
-    ],
-    "components": {
-      "material": true,
-      "materials_needed": [
-        "a cup of water"
-      ],
-      "raw": "V, S, M (a cup of water)",
-      "somatic": true,
-      "verbal": true
-    },
-    "duration": "1 hour",
-    "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot.",
-    "level": "1",
-    "name": "Armor of Agathys",
-    "range": "Self",
-    "ritual": false,
-    "school": "abjuration",
-    "tags": [
-      "level1"
-    ],
-    "type": "1st-level abjuration",
-    "description": [
-      "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage."
-    ]
-  },
-  {
     "casting_time": "1 minute",
     "classes": [
       "wizard"
@@ -675,6 +618,35 @@
     "description": [
       "You place an Illusion on a creature or an object you touch so that Divination Spells reveal false information about it. The target can be a willing creature or an object that isn’t being carried or worn by another creature.\n\nWhen you cast the spell, choose one or both of the following Effects. The Effect lasts for the Duration. If you cast this spell on the same creature or object every day for 30 days, placing the same Effect on it each time, the illusion lasts until it is dispelled.\n\nFalse Aura. You change the way the target appears to Spells and Magical Effects, such as Detect Magic, that detect Magical auras. You can make a nonmagical object appear Magical, a Magical object appear nonmagical, or change the object’s",
       "Magical aura so that it appears to belong to a specific School of Magic that you choose. When you use this Effect on an object, you can make the false magic apparent to any creature that handles the item.\n\nMask. You change the way the target appears to Spells and Magical Effects that detect Creature Types, such as a paladin’s Divine Sense or the trigger of a sym⁠bol spell. You choose a Creature Type and other Spells and Magical Effects treat the target as if it were a creature of that type or of that Alignment."
+    ]
+  },
+  {
+    "casting_time": "Action",
+    "classes": [
+      "warlock"
+    ],
+    "components": {
+      "material": true,
+      "materials_needed": [
+        "a cup of water"
+      ],
+      "raw": "V, S, M (a cup of water)",
+      "somatic": true,
+      "verbal": true
+    },
+    "duration": "1 hour",
+    "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot.",
+    "level": "1",
+    "name": "Armor of Agathys",
+    "range": "Self",
+    "ritual": false,
+    "school": "abjuration",
+    "tags": [
+      "level1"
+    ],
+    "type": "1st-level abjuration",
+    "description": [
+      "A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage."
     ]
   },
   {
@@ -8089,6 +8061,34 @@
     "type": "8th-level abjuration",
     "description": [
       "Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils *wish* spells and spells or effects of similar power used to affect the target's mind or to gain information about the target."
+    ]
+  },
+  {
+    "casting_time": "Action",
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "components": {
+      "material": false,
+      "raw": "V",
+      "somatic": false,
+      "verbal": true
+    },
+    "duration": "1 round",
+    "higher_levels": "This spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "level": "cantrip",
+    "name": "Mind Sliver",
+    "range": "60 feet",
+    "ritual": false,
+    "school": "",
+    "tags": [
+      "cantrip"
+    ],
+    "type": "Evocation cantrip",
+    "description": [
+      "You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn."
     ]
   },
   {

@@ -1,8 +1,11 @@
 import * as fs from "fs"
 
+// Run with
+// node src/scripts/transformScript.js
+
 // Read the spells.json file
-const spellsFilePath = "src/spells.json"
-const newSpellsFilePath = "src/spellsnew.json"
+const spellsFilePath = "public/spells.json"
+const newSpellsFilePath = "public/spellsnew.json"
 
 fs.readFile(spellsFilePath, "utf8", (err, data) => {
   if (err) {
