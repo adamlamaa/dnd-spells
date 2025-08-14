@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "DND Spells",
   description: DESCRIPTION,
   icons: [{ rel: "icon", url: "/favicon.ico" }],
+  verification: {
+    google: "9DWy09cdAkDKvxveyVMt02xvUewYJwr4HFzIQlmilN4",
+  },
 }
 
 const geist = Geist({
