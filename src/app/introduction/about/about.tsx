@@ -1,6 +1,7 @@
 import { TiltedCard } from "@/components/ui/tiltedCard"
 import Image from "next/image"
 import { GlossyBox } from "@/components/ui/glossyBox"
+import { DESCRIPTION } from "@/lib/description"
 
 export const About = () => {
   return (
@@ -12,12 +13,7 @@ export const About = () => {
       <div
         className={"col-span-3 items-center justify-center py-4 md:col-span-2"}
       >
-        This website is designed to help players of DND 5e Legacy Edition easily
-        print out their spells, offering a convenient way to bring their spell
-        lists to the table for a more tactile, analogue gameplay experience. By
-        providing printable spell cards, the site aims to enhance your sessions
-        with quick reference and hands-on interaction, making it easier to
-        manage your character’s magic during your adventures.
+        {DESCRIPTION}
       </div>
       <div className={"col-span-3 grid grid-cols-2 gap-1 md:grid-cols-5"}>
         <TiltedCard startRotate={"rotate-6"} backgroundColor={"bg-violet-500"}>

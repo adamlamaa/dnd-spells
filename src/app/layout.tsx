@@ -8,10 +8,11 @@ import { LinkButtonWithTooltip } from "@/components/ui/linkButtonWithTooltip"
 import type { ReactNode } from "react"
 import { Analytics } from "@vercel/analytics/next"
 import Image from "next/image"
+import { DESCRIPTION } from "@/lib/description"
 
 export const metadata: Metadata = {
   title: "DND Spells",
-  description: "Create dnd spell print-outs.",
+  description: DESCRIPTION,
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 }
 
