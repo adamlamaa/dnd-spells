@@ -8,7 +8,7 @@ export default function HomePage() {
   const [memeIndex, setMemeIndex] = useState(0)
 
   useEffect(() => {
-    setMemeIndex(Math.floor(Math.random() * 9))
+    setMemeIndex(Math.floor(Math.random() * 10))
   }, [])
 
   return (
