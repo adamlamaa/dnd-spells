@@ -36,7 +36,7 @@ export const SpellCardLayout = ({
         backgroundColor: settings.spellCardBorderColor,
       }}
       className={
-        "flex h-[360px] flex-col justify-between gap-2 rounded-lg border-2 border-white p-2"
+        "spell-card flex h-[360px] flex-col justify-between gap-2 rounded-lg border-2 border-white p-2"
       }
     >
       <div className={"flex h-full flex-col gap-2"}>

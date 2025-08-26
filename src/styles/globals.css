@@ -29,6 +29,10 @@
     border: none;
     color: #000000;
   }
+  .spell-grid .spell-card:nth-child(9n) {
+    page-break-after: always;
+    break-after: page;
+  }
   .text-base {
     font-size: 9px;
   }
