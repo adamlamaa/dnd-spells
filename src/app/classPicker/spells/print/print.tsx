@@ -60,6 +60,7 @@ export const Print = ({}: PrintProps) => {
           level: Array.from(filters.level.values()),
         },
         settings,
+        spellCount: spellsSorted.length,
       }),
       method: "POST",
     })

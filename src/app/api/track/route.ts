@@ -6,6 +6,7 @@ export async function POST(request: Request) {
       .object({
         filters: z.object({}).passthrough(),
         settings: z.object({}).passthrough(),
+        spellCount: z.number().int().min(0),
       })
       .parse(await request.json())
 
